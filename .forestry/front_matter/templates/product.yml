@@ -21,3 +21,20 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: categories
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Quests
+    - Extra Large
+    - Tech
+    - Magic
+    - Exploration
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Categories
