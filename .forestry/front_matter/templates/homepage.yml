@@ -4,8 +4,10 @@ hide_body: true
 fields:
 - name: blocks
   type: blocks
-  template_types: []
+  template_types:
+  - welcome
+  - product
   config:
     min: 
     max: 
-  label: Vlocks
+  label: Blocks
