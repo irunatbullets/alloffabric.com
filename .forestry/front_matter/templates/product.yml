@@ -55,3 +55,5 @@ fields:
   config: {}
   template: color
   label: Color
+pages:
+- content/products/aof5.md
