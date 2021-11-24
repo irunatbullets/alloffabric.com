@@ -12,6 +12,16 @@ stats:
 statistics:
   stat: ''
   description: ''
-something: []
+something:
+- template: welcome
+  statistics:
+    stat: something
+    description: lake
+  title: ''
+  text: ''
+  button:
+    text: ''
+    url: ''
+  stats: []
 
 ---
