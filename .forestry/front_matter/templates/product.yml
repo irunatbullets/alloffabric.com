@@ -45,5 +45,3 @@ fields:
   config: {}
   template: button
   label: Button
-pages:
-- content/products/aof5.md
