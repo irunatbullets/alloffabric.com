@@ -1,23 +1,6 @@
 ---
 label: Home
 hide_body: true
-fields:
-- name: welcome
-  type: blocks
-  label: Welcome
-  template_types:
-  - welcome
-  - welcome
-  config:
-    min: 
-    max: 
-- name: hello
-  type: blocks
-  label: Hello
-  template_types:
-  - welcome
-  config:
-    min: 
-    max: 
+fields: []
 pages:
 - content/home.md
