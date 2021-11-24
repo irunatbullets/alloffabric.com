@@ -3,11 +3,11 @@ label: Stat
 hide_body: true
 display_field: stat
 fields:
-- name: stat
+- name: title
   type: text
   config:
     required: false
-  label: Stat
+  label: Title
 - name: description
   type: text
   config:
