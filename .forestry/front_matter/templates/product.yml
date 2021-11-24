@@ -26,5 +26,10 @@ fields:
   config: {}
   template: categories
   label: Cats
+- name: blah
+  type: include
+  config: {}
+  template: blah
+  label: Blah
 pages:
 - content/products/aof5.md
