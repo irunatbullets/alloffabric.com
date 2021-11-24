@@ -7,5 +7,10 @@ fields:
   config: {}
   template: welcome
   label: Welcome
+- name: our-modpacks
+  type: include
+  config: {}
+  template: products
+  label: Our Modpacks
 pages:
 - content/home.md
