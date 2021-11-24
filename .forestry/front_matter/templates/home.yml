@@ -1,4 +1,9 @@
 ---
 label: Home
 hide_body: true
-fields: []
+fields:
+- name: welcome
+  type: include
+  config: {}
+  template: welcome
+  label: Welcome
