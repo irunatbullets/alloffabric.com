@@ -1,4 +1,12 @@
 ---
 label: Vinny
 hide_body: true
-fields: []
+fields:
+- name: header
+  type: blocks
+  template_types:
+  - text-block
+  config:
+    min: 
+    max: 
+  label: Header
