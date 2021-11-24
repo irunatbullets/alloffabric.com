@@ -50,3 +50,7 @@ fields:
     template: button
     label: Button
   label: Button
+- name: hello
+  type: image_gallery
+  config: {}
+  label: Hello
