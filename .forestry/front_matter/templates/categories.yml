@@ -1,4 +1,29 @@
 ---
 label: Categories
 hide_body: true
-fields: []
+fields:
+- name: categories
+  type: field_group
+  config: {}
+  fields:
+  - name: quests
+    type: boolean
+    label: Quests
+    default: true
+  - name: exploration
+    type: boolean
+    label: Exploration
+    default: true
+  - name: extra-large
+    type: boolean
+    label: Extra Large
+    default: true
+  - name: magic
+    type: boolean
+    label: Magic
+    default: true
+  - name: tech
+    type: boolean
+    label: Tech
+    default: true
+  label: Categories
