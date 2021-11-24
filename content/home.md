@@ -8,6 +8,14 @@ welcome:
     text: ''
     url: ''
   stats: []
+- template: welcome
+  color: White
+  title: mememe
+  text: ''
+  button:
+    text: ''
+    url: ''
+  stats: []
 hello:
 - template: welcome
   color: White
