@@ -39,3 +39,18 @@ fields:
     config: {}
     template: stat
     label: Stat
+- name: statistics
+  type: field_group
+  config: {}
+  fields:
+  - name: stat
+    type: text
+    config:
+      required: false
+    label: Stat
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  label: Statistics
