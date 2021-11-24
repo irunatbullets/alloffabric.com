@@ -1,7 +1,6 @@
 ---
 label: Stat
 hide_body: true
-display_field: stat
 fields:
 - name: stat
   type: text
