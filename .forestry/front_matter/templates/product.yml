@@ -7,6 +7,20 @@ fields:
   config:
     required: false
   label: Title
+- name: type
+  type: select
+  default: Modpack
+  config:
+    required: false
+    options:
+    - Modpack
+    - Mod
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
 - name: image
   type: file
   config:
@@ -26,5 +40,10 @@ fields:
   config: {}
   template: categories
   label: Categories
+- name: button
+  type: include
+  config: {}
+  template: button
+  label: Button
 pages:
 - content/products/aof5.md
