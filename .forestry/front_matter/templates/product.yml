@@ -21,5 +21,10 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: categories
+  type: include
+  config: {}
+  template: categories
+  label: Categories
 pages:
 - content/products/aof5.md
