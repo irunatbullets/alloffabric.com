@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: content
+  path: content/hello.md
   label: Pages
 - type: directory
   path: content/products
