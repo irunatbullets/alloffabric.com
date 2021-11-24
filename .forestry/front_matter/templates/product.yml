@@ -22,27 +22,12 @@ fields:
       format: markdown
   label: Description
 - name: categories
-  type: tag_list
-  default:
-  - Quests
-  - Extra Large
-  - Tech
-  - Exploration
-  - Magic
+  type: blocks
   label: Categories
-- name: cats
-  type: list
+  template_types:
+  - categories
   config:
-    use_select: true
     min: 
     max: 
-    source:
-      type: simple
-      section: products
-    options:
-    - one
-    - two
-    - three
-  label: Cats
 pages:
 - content/products/aof5.md
