@@ -10,3 +10,5 @@ fields:
   config:
     min: 1
     max: 1
+pages:
+- content/blah.md
