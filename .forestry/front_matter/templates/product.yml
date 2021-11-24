@@ -50,3 +50,8 @@ fields:
     template: button
     label: Button
   label: Button
+- name: color
+  type: include
+  config: {}
+  template: color
+  label: Color
