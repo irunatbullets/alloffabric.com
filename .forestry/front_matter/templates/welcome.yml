@@ -21,3 +21,10 @@ fields:
   config: {}
   template: button
   label: Button
+- name: stats
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Stats
