@@ -22,21 +22,13 @@ fields:
       format: markdown
   label: Description
 - name: categories
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - Quests
-    - Extra Large
-    - Tech
-    - Magic
-    - Exploration
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
+  type: tag_list
+  default:
+  - Quests
+  - Extra Large
+  - Tech
+  - Exploration
+  - Magic
   label: Categories
 pages:
 - content/products/aof5.md
