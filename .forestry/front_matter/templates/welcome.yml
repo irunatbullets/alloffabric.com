@@ -39,3 +39,8 @@ fields:
     config: {}
     template: stat
     label: Stat
+- name: color
+  type: include
+  config: {}
+  template: color
+  label: Color
