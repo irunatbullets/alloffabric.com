@@ -2,6 +2,7 @@
 type: select
 name: category
 label: Category
+hide_body: true
 description: Select a category for this page
 hidden: false
 config:
