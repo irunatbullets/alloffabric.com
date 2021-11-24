@@ -7,5 +7,13 @@ fields:
   config: {}
   template: welcome
   label: Welcome
+- name: something
+  type: blocks
+  label: something
+  template_types:
+  - welcome
+  config:
+    min: 
+    max: 
 pages:
 - content/home.md
