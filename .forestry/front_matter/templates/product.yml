@@ -30,5 +30,19 @@ fields:
   - Exploration
   - Magic
   label: Categories
+- name: cats
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
+      section: products
+    options:
+    - one
+    - two
+    - three
+  label: Cats
 pages:
 - content/products/aof5.md
