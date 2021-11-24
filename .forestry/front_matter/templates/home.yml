@@ -3,12 +3,19 @@ label: Home
 hide_body: true
 fields:
 - name: welcome
-  type: include
-  config: {}
-  template: welcome
+  type: blocks
   label: Welcome
-- name: our-modpacks
-  type: include
-  config: {}
-  template: products
-  label: Our Modpacks
+  template_types:
+  - welcome
+  - welcome
+  config:
+    min: 
+    max: 
+- name: hello
+  type: blocks
+  label: Hello
+  template_types:
+  - welcome
+  config:
+    min: 
+    max: 
