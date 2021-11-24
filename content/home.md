@@ -11,7 +11,7 @@ welcome:
 hello:
 - template: welcome
   color: White
-  title: ''
+  title: Hi hi
   text: ''
   button:
     text: ''
