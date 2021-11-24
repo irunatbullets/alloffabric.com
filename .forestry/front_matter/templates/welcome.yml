@@ -25,6 +25,12 @@ fields:
   type: field_group_list
   config:
     min: 
-    max: 
+    max: 4
     labelField: 
   label: Stats
+  fields:
+  - name: stat
+    type: include
+    config: {}
+    template: stat
+    label: Stat
