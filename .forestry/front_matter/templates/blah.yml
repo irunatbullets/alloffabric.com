@@ -1,4 +1,20 @@
 ---
 label: Blah
 hide_body: false
-fields: []
+fields:
+- name: quests
+  type: boolean
+  default: false
+  label: Quests
+- name: exploration
+  type: boolean
+  label: Exploration
+- name: extra_large
+  type: boolean
+  label: Extra Large
+- name: magic
+  type: boolean
+  label: Magic
+- name: tech
+  type: boolean
+  label: Tech
