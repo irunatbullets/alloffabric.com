@@ -6,10 +6,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: quests
-    type: boolean
-    label: Quests
-    default: true
   - name: exploration
     type: boolean
     label: Exploration
@@ -21,6 +17,10 @@ fields:
   - name: magic
     type: boolean
     label: Magic
+    default: true
+  - name: quests
+    type: boolean
+    label: Quests
     default: true
   - name: tech
     type: boolean
