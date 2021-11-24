@@ -62,6 +62,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://strapi.nuxtjs.org/
+    '@nuxtjs/strapi',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -76,6 +78,11 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  strapi: {
+    entities: ['homepage', 'products'],
+    url: 'http://localhost:1337',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
