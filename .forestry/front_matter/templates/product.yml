@@ -21,13 +21,10 @@ fields:
     schema:
       format: markdown
   label: Description
-- name: categories
-  type: blocks
-  label: Categories
-  template_types:
-  - categories
-  config:
-    min: 
-    max: 
+- name: cats
+  type: include
+  config: {}
+  template: categories
+  label: Cats
 pages:
 - content/products/aof5.md
