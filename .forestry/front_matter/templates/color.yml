@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - name: color
   type: select
-  default: []
+  default: White
   config:
     required: false
     options:
@@ -15,6 +15,7 @@ fields:
     - Blue
     - Purple
     - Pink
+    - White
     source:
       type: simple
       section: 
