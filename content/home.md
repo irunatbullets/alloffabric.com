@@ -1,5 +1,5 @@
 ---
-title: ''
+title: Welcome to All of Fabric
 text: ''
 button:
   text: ''
