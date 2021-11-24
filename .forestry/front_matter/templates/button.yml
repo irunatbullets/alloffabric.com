@@ -16,17 +16,3 @@ fields:
   config:
     required: false
   label: URL
-- name: color
-  type: select
-  default: Orange
-  config:
-    required: false
-    options:
-    - Orange
-    - White
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Color
