@@ -5,8 +5,12 @@ fields:
 - name: blocks
   type: blocks
   template_types:
+  - ads
   - welcome
   - products
+  - our-community
+  - our-community
+  - faqs
   config:
     min: 
     max: 
