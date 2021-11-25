@@ -16,7 +16,24 @@ blocks:
   image: ''
 - template: products
   title: ''
-  products: []
+  products:
+  - products:
+    - template: product
+      categories:
+        exploration: true
+        extra-large: true
+        magic: false
+        quests: false
+        tech: true
+      type: Modpack
+      button:
+        color: Orange
+        text: ''
+        url: ''
+      color: White
+      title: ''
+      image: ''
+      description: ''
 - template: content-section
   color: White
   title: ''
