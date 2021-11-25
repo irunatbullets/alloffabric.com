@@ -15,25 +15,24 @@ blocks:
     description: blah
   image: ''
 - template: products
-  title: ''
+  title: Something
   products:
-  - products:
-    - template: product
-      categories:
-        exploration: true
-        extra-large: true
-        magic: false
-        quests: false
-        tech: true
-      type: Modpack
-      button:
-        color: Orange
-        text: ''
-        url: ''
-      color: White
-      title: AOF5
-      image: ''
-      description: ''
+  - template: product
+    categories:
+      exploration: true
+      extra-large: true
+      magic: true
+      quests: true
+      tech: true
+    type: Modpack
+    button:
+      color: Orange
+      text: Hello
+      url: ''
+    color: Green
+    title: Hello
+    description: I'm a product
+    image: ''
 - template: content-section
   color: White
   title: ''
