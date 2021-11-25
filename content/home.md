@@ -10,7 +10,9 @@ blocks:
   color: White
   title: ''
   text: ''
-  stats: []
+  stats:
+  - title: 4gb
+    description: blah
   image: ''
 - template: products
   title: ''
