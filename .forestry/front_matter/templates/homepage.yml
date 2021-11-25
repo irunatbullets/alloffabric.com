@@ -9,7 +9,7 @@ fields:
   - products
   config:
     min: 
-    max: 2
+    max: 
   label: Blocks
 pages:
 - content/home.md
