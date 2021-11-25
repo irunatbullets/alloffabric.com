@@ -7,6 +7,7 @@ blocks:
   button:
     text: Join us
     url: ''
+    color: Orange
   stats: []
   image: ''
 - template: products
