@@ -1,4 +1,25 @@
 ---
 label: Products
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: products
+  type: field_group_list
+  fields:
+  - name: products
+    type: blocks
+    label: Products
+    template_types:
+    - product
+    config:
+      min: 
+      max: 
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Products
