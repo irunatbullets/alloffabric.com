@@ -15,4 +15,4 @@ fields:
     max: 
   label: Blocks
 pages:
-- content/test.md
+- content/home.md
