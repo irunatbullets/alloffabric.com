@@ -17,5 +17,32 @@ blocks:
       url: "#"
     title: AOF5 is OUT!
     image: ''
+- template: welcome
+  button:
+    color: Orange
+    text: ''
+    url: ''
+  color: White
+  title: ''
+  text: ''
+  stats: []
+  image: ''
+- template: products
+  title: ''
+  products: []
+- template: content-section
+  color: White
+  title: ''
+  intro: ''
+  content: ''
+  image: ''
+  sections: []
+- template: content-section
+  color: White
+  title: ''
+  intro: ''
+  content: ''
+  image: ''
+  sections: []
 
 ---
