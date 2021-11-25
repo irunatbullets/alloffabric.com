@@ -2,14 +2,14 @@
 blocks:
 - template: ads
   ads:
-  - title: Ad
-    image: ''
+  - title: Wowsers
     categories:
       exploration: false
+      magic: true
       extra-large: false
-      magic: false
       quests: false
       tech: false
+    image: ''
     type: ''
     mod_count: 
     button:
