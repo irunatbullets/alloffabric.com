@@ -40,6 +40,19 @@ fields:
       file: 
       path: 
   label: Type
+- name: mod_count
+  type: number
+  label: Mod count
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  showOnly:
+    field: type
+    value: Modpack
 - name: button
   type: include
   config: {}
