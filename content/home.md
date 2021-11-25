@@ -7,7 +7,7 @@ blocks:
     color: Orange
     text: ''
     url: ''
-  color: White
+  color: Red
   title: ''
   text: ''
   stats:
