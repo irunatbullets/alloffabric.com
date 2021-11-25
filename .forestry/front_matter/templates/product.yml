@@ -7,20 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: type
-  type: select
-  default: Modpack
-  config:
-    required: false
-    options:
-    - Modpack
-    - Mod
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Type
 - name: image
   type: file
   config:
@@ -40,15 +26,24 @@ fields:
   config: {}
   template: categories
   label: Categories
+- name: type
+  type: select
+  default: Modpack
+  config:
+    required: false
+    options:
+    - Modpack
+    - Mod
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
 - name: button
-  type: field_group
+  type: include
   config: {}
-  fields:
-  - name: button
-    type: include
-    config: {}
-    template: button
-    label: Button
+  template: button
   label: Button
 - name: color
   type: include
