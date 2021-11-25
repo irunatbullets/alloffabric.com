@@ -29,10 +29,13 @@ fields:
   type: field_group_list
   fields:
   - name: faq
-    type: include
-    config: {}
-    template: faq
+    type: blocks
     label: Faq
+    template_types:
+    - faq
+    config:
+      min: 
+      max: 
   config:
     min: 
     max: 
