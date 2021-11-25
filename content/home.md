@@ -31,7 +31,7 @@ blocks:
         text: ''
         url: ''
       color: White
-      title: ''
+      title: AOF5
       image: ''
       description: ''
 - template: content-section
