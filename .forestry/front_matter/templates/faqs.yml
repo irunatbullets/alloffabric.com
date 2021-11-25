@@ -26,18 +26,10 @@ fields:
       format: markdown
   label: Content
 - name: faqs
-  type: field_group_list
-  fields:
-  - name: faq
-    type: blocks
-    label: Faq
-    template_types:
-    - faq
-    config:
-      min: 
-      max: 
+  type: blocks
+  template_types:
+  - faqs
   config:
     min: 
     max: 
-    labelField: 
-  label: Faqs
+  label: FAQs
