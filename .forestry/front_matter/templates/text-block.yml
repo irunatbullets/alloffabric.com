@@ -27,3 +27,14 @@ fields:
   showOnly:
     field: include_button
     value: true
+- name: include_image
+  type: boolean
+  label: Include image
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  showOnly:
+    field: include_image
+    value: true
