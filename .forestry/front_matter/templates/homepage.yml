@@ -11,5 +11,3 @@ fields:
     min: 
     max: 
   label: Blocks
-pages:
-- content/home.md
