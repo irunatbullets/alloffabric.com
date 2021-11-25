@@ -1,7 +1,21 @@
 ---
 blocks:
 - template: ads
-  ads: []
+  ads:
+  - title: Ad
+    image: ''
+    categories:
+      exploration: false
+      extra-large: false
+      magic: false
+      quests: false
+      tech: false
+    type: ''
+    mod_count: 
+    button:
+      text: ''
+      url: ''
+      color: ''
 - template: welcome
   button:
     color: Orange
@@ -25,14 +39,15 @@ blocks:
       quests: true
       tech: true
     type: Modpack
+    mod_count: '0'
     button:
       color: Orange
-      text: Hello
+      text: ''
       url: ''
-    color: Green
-    title: Hello
-    description: I'm a product
+    color: White
+    title: Product
     image: ''
+    description: ''
 - template: content-section
   color: White
   title: ''
