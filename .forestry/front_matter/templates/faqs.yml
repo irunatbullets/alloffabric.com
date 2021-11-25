@@ -28,7 +28,7 @@ fields:
 - name: faqs
   type: blocks
   template_types:
-  - faqs
+  - faq
   config:
     min: 
     max: 
