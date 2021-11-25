@@ -18,6 +18,12 @@ blocks:
   stats:
   - title: 10k+
     description: Active players in our community
+  - title: 200K+
+    description: AOF players and going up every day
+  - title: "<4min"
+    description: Less than 4 minutes for the pack to load
+  - title: 4GB
+    description: 4GB of Ram is all you need for fluid gameplay (even with shaders!)
   image: ''
 - template: products
   title: ''
