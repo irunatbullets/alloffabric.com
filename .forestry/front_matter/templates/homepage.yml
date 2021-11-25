@@ -8,7 +8,7 @@ fields:
   - ads
   - welcome
   - products
-  - our-community
+  - content-section
   - faqs
   config:
     min: 
