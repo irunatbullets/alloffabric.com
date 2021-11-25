@@ -18,10 +18,19 @@ blocks:
 - template: our-community
   color: White
   main_image: ''
-  title: ''
-  intro: ''
-  content: ''
-  sections: []
+  title: Our community
+  intro: Lorem
+  content: Lorem
+  sections:
+  - template: text-block
+    color: Orange
+    title: Need help?
+    content: Lorem
+    include_button: false
+    include_image: false
+    text: ''
+    url: ''
+    image: ''
 - template: our-community
   color: White
   main_image: ''
