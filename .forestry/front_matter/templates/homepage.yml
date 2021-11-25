@@ -14,3 +14,5 @@ fields:
     min: 
     max: 
   label: Blocks
+pages:
+- content/test.md
