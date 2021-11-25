@@ -2,31 +2,32 @@
 label: Button
 hide_body: true
 fields:
-- name: text
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Text
-- name: url
-  type: text
-  config:
-    required: false
-  label: URL
-- name: color
-  type: select
-  default: Orange
-  config:
-    required: false
-    options:
-    - Orange
-    - White
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Color
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: color
+    type: select
+    default: Orange
+    config:
+      required: false
+      options:
+      - Orange
+      - White
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Color
+  label: Button
