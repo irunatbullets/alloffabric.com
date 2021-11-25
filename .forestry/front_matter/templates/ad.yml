@@ -2,11 +2,50 @@
 label: Ad
 hide_body: true
 fields:
-- name: ads
-  type: blocks
-  label: Ads
-  template_types:
-  - products
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: categories
+  type: include
+  config: {}
+  template: categories
+  label: Categories
+- name: type
+  type: select
+  default: Modpack
+  config:
+    required: false
+    options:
+    - Modpack
+    - Mod
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+- name: mod_count
+  type: number
+  label: Mod count
+  description: ''
+  default: 0
+  required: true
   config:
     min: 
     max: 
+    step: 
+  showOnly:
+    field: type
+    value: Modpack
+- name: button
+  type: include
+  config: {}
+  template: button
+  label: Button
