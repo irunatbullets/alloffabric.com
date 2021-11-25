@@ -1,12 +1,12 @@
 ---
-label: Ads
+label: CTAs
 hide_body: true
 fields:
-- name: ads
+- name: ctas
   type: blocks
-  label: Ads
+  label: CTAs
   template_types:
-  - ad
+  - cta
   config:
-    min: 
-    max: 
+    min:
+    max:

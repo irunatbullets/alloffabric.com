@@ -1,20 +1,21 @@
 <template>
-  <div>{{homepage}}</div>
+  <div>
+    <component
+      :is="block.template"
+      v-for="(block, index) in page.blocks"
+      :key="index"
+      :props="block"
+    />
+  </div>
 </template>
 
 <script>
 export default {
-  data () {
+  async asyncData ({ $content }) {
+    const page = await $content('home').fetch()
+
     return {
-      homepage: null,
-      error: null
-    }
-  },
-  async mounted () {
-    try {
-      this.homepage = await this.$strapi.$homepage.find()
-    } catch (error) {
-      this.error = error
+      page
     }
   }
 }

@@ -1,7 +1,7 @@
 ---
 blocks:
-- template: ads
-  ads: []
+- template: ctas
+  ctas: []
 - template: welcome
   button:
     color: White
