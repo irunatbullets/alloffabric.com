@@ -2,12 +2,13 @@
 blocks:
 - template: welcome
   color: White
-  title: ''
+  title: Welcome to All of Fabric
   text: ''
   button:
-    text: ''
+    text: Join us
     url: ''
   stats: []
+  image: ''
 - template: products
   title: Our modpacks
   products: []
