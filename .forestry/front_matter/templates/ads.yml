@@ -3,15 +3,10 @@ label: Ads
 hide_body: true
 fields:
 - name: ads
-  type: field_group_list
-  fields:
-  - name: ad
-    type: include
-    config: {}
-    template: ad
-    label: Ad
+  type: blocks
+  label: Ads
+  template_types:
+  - ad
   config:
     min: 
     max: 
-    labelField: 
-  label: Ads
