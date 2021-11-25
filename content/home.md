@@ -4,11 +4,11 @@ blocks:
   ads:
   - title: Wowsers
     categories:
-      exploration: false
+      exploration: true
       magic: true
-      extra-large: false
-      quests: false
-      tech: false
+      extra-large: true
+      quests: true
+      tech: true
     image: ''
     type: ''
     mod_count: 
