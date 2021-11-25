@@ -20,9 +20,14 @@ fields:
   type: boolean
   label: Include button
 - name: button
-  type: include
+  type: field_group
   config: {}
-  template: button
+  fields:
+  - name: button
+    type: include
+    config: {}
+    template: button
+    label: Button
   label: Button
   showOnly:
     field: include_button
