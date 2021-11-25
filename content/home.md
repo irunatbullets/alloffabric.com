@@ -15,7 +15,9 @@ blocks:
     et nobis autem non architecto quia! Aut distinctio rerum qui numquam eaque et
     adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
     voluptatem.
-  stats: []
+  stats:
+  - title: 10k+
+    description: Active players in our community
   image: ''
 - template: products
   title: ''
