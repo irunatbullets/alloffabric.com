@@ -9,7 +9,6 @@ fields:
   - welcome
   - products
   - our-community
-  - our-community
   - faqs
   config:
     min: 
