@@ -44,5 +44,10 @@ blocks:
   content: ''
   image: ''
   sections: []
+- template: faqs
+  title: ''
+  intro: ''
+  content: ''
+  faqs: []
 
 ---
