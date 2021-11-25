@@ -17,14 +17,9 @@ fields:
       format: markdown
   label: Text
 - name: button
-  type: field_group
+  type: include
   config: {}
-  fields:
-  - name: button
-    type: include
-    config: {}
-    template: button
-    label: Button
+  template: button
   label: Button
 - name: stats
   type: field_group_list
