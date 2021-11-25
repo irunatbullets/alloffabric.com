@@ -39,6 +39,11 @@ fields:
     config: {}
     template: stat
     label: Stat
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
 - name: color
   type: include
   config: {}
