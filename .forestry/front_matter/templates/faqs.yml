@@ -27,6 +27,12 @@ fields:
   label: Content
 - name: faqs
   type: field_group_list
+  fields:
+  - name: faq
+    type: include
+    config: {}
+    template: faq
+    label: Faq
   config:
     min: 
     max: 
