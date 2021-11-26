@@ -8,7 +8,7 @@ blocks:
     text: Join us
     url: "#"
   color: Red
-  title: Welcome to All of Fabric!
+  title: Welcome to All of Fabric
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
     Ut neque dolorem aut dignissimos mollitia et repellat adipisci! Ex nisi possimus
