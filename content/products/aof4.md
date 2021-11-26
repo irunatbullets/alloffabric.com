@@ -1,0 +1,22 @@
+---
+release_date: 2021-05-26T13:58:16Z
+categories:
+  exploration: true
+  extra-large: true
+  magic: true
+  quests: false
+  tech: true
+type: Modpack
+mod_count: 180
+button:
+  color: Orange
+  text: Play now
+  url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-4
+color: Blue
+title: AOF4
+image: "/modpack-aof4.png"
+text: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
+  eaque et adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est
+  consectetur voluptatem.
+
+---
