@@ -2,6 +2,7 @@
 blocks:
 - template: ctas
   ctas: []
+  title: ''
 - template: welcome
   button:
     color: White
@@ -47,7 +48,7 @@ blocks:
     description: Something
     text: ''
 - template: content-section
-  color: White
+  color: Yellow
   title: "Our \Lcommunity"
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
@@ -56,7 +57,7 @@ blocks:
     et nobis autem non architecto quia! Aut distinctio rerum qui numquam eaque et
     adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
     voluptatem.
-  image: ''
+  image: "/placeholder-large.png"
   sections:
   - template: text-block
     button:
