@@ -25,11 +25,3 @@ fields:
     schema:
       format: markdown
   label: Text
-- name: faqs
-  type: blocks
-  template_types:
-  - faq
-  config:
-    min: 
-    max: 
-  label: FAQs
