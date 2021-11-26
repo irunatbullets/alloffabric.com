@@ -13,9 +13,9 @@ button:
   text: Play now
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-3
 color: Red
-title: AOF3
-image: "/modpack-aof3-1.png"
-text: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
+name: AOF3
+image: "/modpack-aof3.png"
+description: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
   eaque et adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est
   consectetur voluptatem.
 
