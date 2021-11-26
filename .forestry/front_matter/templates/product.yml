@@ -2,6 +2,16 @@
 label: Product
 hide_body: true
 fields:
+- name: initial_release_date
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Initial release date
+  default: now
 - name: title
   type: text
   config:
