@@ -87,11 +87,29 @@ blocks:
     image: ''
 - template: content-section
   color: White
-  title: ''
-  intro: ''
-  text: ''
-  image: ''
-  sections: []
+  title: Support our team
+  intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+  text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
+    similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
+    Ut neque dolorem aut dignissimos mollitia et repellat adipisci! Ex nisi possimus
+    et nobis autem non architecto quia! Aut distinctio rerum qui numquam eaque et
+    adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
+    voluptatem.
+  image: "/placeholder-large.png"
+  sections:
+  - template: text-block
+    button:
+      color: Orange
+      text: ''
+      url: ''
+    title: Custom items, skins and more
+    text: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+      praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+      excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+      officia deserunt mollitia animi, id est laborum et dolorum fuga.
+    include_image: true
+    image: "/placeholder-small.png"
+    include_button: false
 - template: faqs
   title: ''
   intro: ''
