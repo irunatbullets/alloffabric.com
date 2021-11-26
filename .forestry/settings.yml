@@ -27,6 +27,13 @@ sections:
   match: "**/*"
   templates:
   - product
+- type: directory
+  path: content/CTAs
+  label: CTAs
+  create: documents
+  match: "**/*"
+  templates:
+  - cta
 upload_dir: assets/images
 public_path: ''
 front_matter_path: ''
