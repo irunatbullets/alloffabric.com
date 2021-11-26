@@ -26,27 +26,6 @@ blocks:
   - title: 4GB
     text: 4GB of Ram is all you need for fluid gameplay (even with shaders!)
   image: "/placeholder-large.png"
-- template: products
-  title: ''
-  products:
-  - template: product
-    categories:
-      exploration: true
-      extra-large: true
-      magic: true
-      quests: true
-      tech: true
-    type: Modpack
-    mod_count: '0'
-    button:
-      color: Orange
-      text: ''
-      url: ''
-    color: White
-    title: AOF5
-    image: ""
-    description: Something
-    text: ''
 - template: content-section
   color: Yellow
   title: "Our \Lcommunity"
