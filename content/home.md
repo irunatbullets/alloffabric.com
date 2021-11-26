@@ -111,9 +111,12 @@ blocks:
     image: "/placeholder-small.png"
     include_button: false
 - template: faqs
-  title: ''
-  intro: ''
-  text: ''
+  title: FAQ
+  intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+  text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
+    similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
+    Ut neque dolorem aut dignissim
   faqs: []
+  color: Purple
 
 ---
