@@ -27,7 +27,24 @@ blocks:
   image: ''
 - template: products
   title: ''
-  products: []
+  products:
+  - template: product
+    categories:
+      exploration: true
+      extra-large: true
+      magic: true
+      quests: true
+      tech: true
+    type: Modpack
+    mod_count: '0'
+    button:
+      color: Orange
+      text: ''
+      url: ''
+    color: White
+    title: AOF5
+    image: "/_nuxt/images/aof5.png"
+    description: Something
 - template: content-section
   color: White
   title: "Our \Lcommunity"
