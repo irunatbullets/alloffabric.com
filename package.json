@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "yarn lint:js",
+    "forestry-preview": "nuxt -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
