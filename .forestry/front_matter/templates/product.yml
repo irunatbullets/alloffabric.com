@@ -73,3 +73,5 @@ fields:
   config: {}
   template: color
   label: Color
+pages:
+- content/products/aof3.md
