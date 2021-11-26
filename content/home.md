@@ -86,7 +86,7 @@ blocks:
     include_image: false
     image: ''
 - template: content-section
-  color: White
+  color: Pink
   title: Support our team
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
