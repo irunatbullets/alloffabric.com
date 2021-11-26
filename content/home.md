@@ -44,7 +44,7 @@ blocks:
       url: ''
     color: White
     title: AOF5
-    image: "/_nuxt/images/aof5.png"
+    image: ""
     description: Something
     text: ''
 - template: content-section
