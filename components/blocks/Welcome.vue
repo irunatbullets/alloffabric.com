@@ -1,6 +1,8 @@
 <template>
   <div>
 
+    <icon name="aof-logo" />
+
     <hero :title="block.title" :text="block.text" :link="block.button" />
 
     <!--

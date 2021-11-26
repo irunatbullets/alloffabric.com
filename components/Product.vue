@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     imgSrc(img) {
-      return require(`~/assets/images/products/${this.img}`)
+      return require(`~/assets/images/${this.img}`)
     }
   },
 }
