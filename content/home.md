@@ -8,7 +8,7 @@ blocks:
     text: Join us
     url: "#"
   color: Red
-  title: Welcome to All of Fabric
+  title: Welcome to All of Fabric!
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
     Ut neque dolorem aut dignissimos mollitia et repellat adipisci! Ex nisi possimus
@@ -45,12 +45,13 @@ blocks:
     title: AOF5
     image: "/_nuxt/images/aof5.png"
     description: Something
+    text: ''
 - template: content-section
   color: White
   title: "Our \Lcommunity"
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-  text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore
-    ea similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
+  text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
+    similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
     Ut neque dolorem aut dignissimos mollitia et repellat adipisci! Ex nisi possimus
     et nobis autem non architecto quia! Aut distinctio rerum qui numquam eaque et
     adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
