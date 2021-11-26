@@ -27,7 +27,7 @@ blocks:
     text: 4GB of Ram is all you need for fluid gameplay (even with shaders!)
   image: "/placeholder-large.png"
 - template: products
-  title: ''
+  title: Our modpacks
 - template: content-section
   color: Yellow
   title: "Our \Lcommunity"
