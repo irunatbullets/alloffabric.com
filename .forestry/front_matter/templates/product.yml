@@ -2,7 +2,7 @@
 label: Product
 hide_body: true
 fields:
-- name: initial_release_date
+- name: release_date
   type: datetime
   description: ''
   config:
@@ -10,7 +10,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-  label: Initial release date
+  label: Release date
   default: now
 - name: title
   type: text
