@@ -11,6 +11,8 @@ sections:
   match: "*"
   templates:
   - homepage
+- type: heading
+  label: Catalogs
 - type: directory
   path: content/FAQs
   label: FAQs
