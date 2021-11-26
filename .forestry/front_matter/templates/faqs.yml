@@ -30,6 +30,6 @@ fields:
   template_types:
   - faq
   config:
-    min:
-    max:
+    min: 
+    max: 
   label: FAQs
