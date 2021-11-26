@@ -1,8 +1,16 @@
 <template>
   <div>
-    <h1>{{block.title}}</h1>
-    <p>{{block.text}}</p>
-    <action :color="buttonColor">{{button.text}}</action>
+
+    <hero :title="block.title" :text="block.text" :link="block.button" />
+
+    <!--
+      <h1>{{block.title}}</h1>
+      <p>{{block.text}}</p>
+      <action :color="buttonColor">{{button.text}}</action>
+    -->
+
+    <stats :stats="block.stats" />
+
   </div>
 </template>
 
@@ -17,13 +25,7 @@ export default {
   data() {
     return {
       block: this.props,
-      button: this.props.button
     }
   },
-  computed: {
-    buttonColor() {
-      return this.button.color.toLowerCase().trim();
-    }
-  }
 }
 </script>

@@ -16,7 +16,7 @@ fields:
     schema:
       format: markdown
   label: Intro
-- name: content
+- name: text
   type: textarea
   default: ''
   config:
@@ -24,12 +24,12 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Content
+  label: Text
 - name: faqs
   type: blocks
   template_types:
   - faq
   config:
-    min: 
-    max: 
+    min:
+    max:
   label: FAQs

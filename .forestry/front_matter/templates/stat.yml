@@ -8,8 +8,8 @@ fields:
   config:
     required: false
   label: Title
-- name: description
+- name: text
   type: text
   config:
     required: false
-  label: Description
+  label: Text

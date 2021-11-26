@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Title
-- name: content
+- name: text
   type: textarea
   default: ''
   config:
@@ -15,4 +15,4 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Content
+  label: Text

@@ -16,7 +16,7 @@ fields:
     schema:
       format: markdown
   label: Intro
-- name: content
+- name: text
   type: textarea
   default: ''
   config:
@@ -24,7 +24,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Content
+  label: Text
 - name: image
   type: file
   config:
@@ -36,7 +36,7 @@ fields:
   template_types:
   - text-block
   config:
-    min: 
+    min:
     max: 2
 - name: color
   type: include

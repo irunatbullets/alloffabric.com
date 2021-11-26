@@ -6,7 +6,7 @@
         {{text}}
       </div>
       <div v-if="link.text && link.url" class="hero__link">
-        <p><action :href="link.url" color="white">{{link.text}}</action></p>
+        <p><action :href="link.url" :color="link.color">{{link.text}}</action></p>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
         url: ''
       })
     }
-  }
+  },
 }
 </script>
 
