@@ -1,12 +1,9 @@
 ---
-label: CTAs
+label: News
 hide_body: true
 fields:
-- name: ctas
-  type: blocks
-  label: CTAs
-  template_types:
-  - cta
+- name: title
+  type: text
   config:
-    min: 
-    max: 
+    required: false
+  label: Title
