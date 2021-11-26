@@ -25,3 +25,8 @@ fields:
     schema:
       format: markdown
   label: Text
+- name: color
+  type: include
+  config: {}
+  template: color
+  label: Color

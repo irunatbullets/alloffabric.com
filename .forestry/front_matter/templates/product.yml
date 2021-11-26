@@ -7,22 +7,22 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format:
+    time_format:
     display_utc: false
   label: Release date
   default: now
-- name: title
+- name: name
   type: text
   config:
     required: false
-  label: Title
+  label: Name
 - name: image
   type: file
   config:
     maxSize: 64
   label: Image
-- name: text
+- name: description
   type: textarea
   default: ''
   config:
@@ -30,7 +30,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Text
+  label: Description
 - name: categories
   type: include
   config: {}
@@ -46,9 +46,9 @@ fields:
     - Mod
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Type
 - name: mod_count
   type: number
@@ -57,9 +57,9 @@ fields:
   default: 0
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min:
+    max:
+    step:
   showOnly:
     field: type
     value: Modpack
@@ -73,3 +73,8 @@ fields:
   config: {}
   template: color
   label: Color
+pages:
+- content/products/aof3.md
+- content/products/aof4.md
+- content/products/aof5.md
+- content/products/skylore.md

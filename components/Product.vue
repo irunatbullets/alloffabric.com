@@ -5,7 +5,7 @@
       <h2 class="product__name">{{ name }}</h2>
       <p class="product__description">{{ description }}</p>
       <categories :categories="categories" extra-classes="product__categories" />
-      <p class="product__summary">Minecraft <span class="product__type">{{ type }}</span><span v-if="type === 'modpack'"><br/>{{ modCount }}+ Mods</span></p>
+      <p class="product__summary">Minecraft <span class="product__type">{{ type }}</span><span v-if="type === 'Modpack'"><br/>{{ modCount }}+ Mods</span></p>
       <action href="#">Play Now</action>
     </div>
   </div>
@@ -18,7 +18,7 @@ export default {
       type: String,
       required: true,
       validator (value) {
-        return ['modpack', 'mod'].includes(value)
+        return ['Modpack', 'Mod'].includes(value)
       }
     },
     name: {
@@ -38,13 +38,14 @@ export default {
       default: () => [],
     },
     modCount: {
-      type: String,
-      default: '0'
+      type: Number,
+      default: 0
     }
   },
   methods: {
     imgSrc(img) {
-      return require(`~/assets/images/${this.img}`)
+      const imgName = this.img.replace('/', '');
+      return require(`~/assets/images/${imgName}`)
     }
   },
 }
@@ -52,7 +53,7 @@ export default {
 
 <style lang="postcss">
 .product {
-  @media (--xl) {
+  @media (--laptop) {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: 1;
@@ -60,25 +61,25 @@ export default {
 }
 
 .product__image {
-  @media (--xl) {
+  @media (--laptop) {
     grid-column: 3 / span 10;
     grid-row: 1;
   }
 
-  @media (--xxl) {
+  @media (--large-desktop) {
     margin-left: 30px;
   }
 }
 
 .product__details {
-  @media (--xl) {
+  @media (--laptop) {
     padding-top: 20px;
     grid-column: 1 / span 3;
     grid-row: 1;
     z-index: 3;
   }
 
-  @media (--xxl) {
+  @media (--large-desktop) {
     padding-top: 32px;
   }
 }

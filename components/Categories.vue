@@ -29,8 +29,10 @@ export default {
 
 <style lang="postcss">
 .categories {
+  list-style: none;
   display: inline-flex;
   gap: 18px;
   margin-bottom: 16px;
+  padding-left: 0;
 }
 </style>
