@@ -2,6 +2,16 @@
 label: FAQ
 hide_body: false
 fields:
+- name: date_added
+  type: datetime
+  label: Date added
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
 - name: title
   type: text
   config:
