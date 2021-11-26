@@ -25,7 +25,7 @@ blocks:
     text: Less than 4 minutes for the pack to load
   - title: 4GB
     text: 4GB of Ram is all you need for fluid gameplay (even with shaders!)
-  image: ''
+  image: "/placeholder-large.png"
 - template: products
   title: ''
   products:
