@@ -12,7 +12,7 @@ button:
   color: Orange
   text: Play now
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-skylore
-color: White
+color: Purple
 title: Skylore
 image: "/modpack-skylore.png"
 text: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
