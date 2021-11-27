@@ -1,8 +1,12 @@
 <template>
   <div>
 
-    <h1>{{block.template}}</h1>
-    {{block}}
+    <h1>{{block.title}}</h1>
+    <p class="intro">{{block.intro}}</p>
+    <div>
+      {{ block.text }}
+    </div>
+
     {{faqs}}
 
   </div>
