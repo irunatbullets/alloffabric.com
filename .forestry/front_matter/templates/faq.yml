@@ -8,8 +8,8 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format:
+    time_format:
     display_utc: false
   default: now
 - name: title
@@ -17,7 +17,7 @@ fields:
   config:
     required: false
   label: Question
-- name: answer
+- name: content
   type: textarea
   default: ''
   config:
