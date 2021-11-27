@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Falloffabric.com\u002F_nuxt\u002Fstatic\u002F1638032735",layout:"default",error:a,serverRendered:true,routePath:"\u002Ftesting",config:{_app:{basePath:"\u002Falloffabric.com\u002F",assetsPath:"\u002Falloffabric.com\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"0d71291a"}}}}(null));
