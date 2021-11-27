@@ -1,6 +1,6 @@
 ---
 label: FAQ
-hide_body: false
+hide_body: true
 fields:
 - name: date_added
   type: datetime
@@ -12,12 +12,12 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: title
+- name: question
   type: text
   config:
     required: false
-  label: Title
-- name: text
+  label: Question
+- name: answer
   type: textarea
   default: ''
   config:
@@ -25,6 +25,6 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Text
+  label: Answer
 pages:
 - content/faqs/how-do-i-blah-blah.md
