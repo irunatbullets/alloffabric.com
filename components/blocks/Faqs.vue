@@ -11,7 +11,7 @@
       <h2>{{faq.title}}</h2>
       <!-- eslint-disable-next-line vue/no-v-html -->
       <div v-html="$md.render(faq.content)"></div>
-      <a v-if="faq.file" :href="faq.file">{{ $fileName(faq.file) }}</a>
+      <a v-if="faq.file" :href="$fileName(faq.file)">{{ $fileName(faq.file) }}</a>
     </div>
 
   </div>

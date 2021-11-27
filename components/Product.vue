@@ -1,7 +1,7 @@
 <template>
   <div class="product">
     {{color}}
-    <img :src="image" :alt="name + ' title screen'" class="product__image" />
+    <img :src="$fileName(image)" :alt="name + ' title screen'" class="product__image" />
     <div class="product__details">
       <h2 class="product__name">{{ name }}</h2>
       <p class="product__description">{{ description }}</p>
