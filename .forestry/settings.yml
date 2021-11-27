@@ -14,7 +14,7 @@ sections:
 - type: heading
   label: Catalogs
 - type: directory
-  path: content/FAQs
+  path: content/faqs
   label: FAQs
   create: documents
   match: "**/*"
@@ -28,7 +28,7 @@ sections:
   templates:
   - product
 - type: directory
-  path: content/CTAs
+  path: content/ctas
   label: CTAs
   create: documents
   match: "**/*"
