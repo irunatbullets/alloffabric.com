@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <img :src="imgSrc()" :alt="name + ' title screen'" class="product__image" />
+    <img :src="image" :alt="name + ' title screen'" class="product__image" />
     <div class="product__details">
       <h2 class="product__name">{{ name }}</h2>
       <p class="product__description">{{ description }}</p>
@@ -25,7 +25,7 @@ export default {
       type: String,
       required: true,
     },
-    img: {
+    image: {
       type: String,
       required: true,
     },
@@ -48,12 +48,6 @@ export default {
         'text': 'Click',
         'url': '#'
       })
-    }
-  },
-  methods: {
-    imgSrc() {
-      const imgName = this.img.replace('/', '');
-      return require(`~/assets/uploads/${imgName}`)
     }
   },
 }

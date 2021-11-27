@@ -3,7 +3,7 @@
     <h2>{{block.title}}</h2>
     <p>{{block.text}}</p>
     <action v-if="button.url && button.text" :href="button.url" :color="button.color">{{button.text}}</action>
-    <img v-if="block.image" :src="imgSrc()" alt="" />
+    <img v-if="block.image" :src="block.image" alt="" />
   </div>
 </template>
 
@@ -19,12 +19,6 @@ export default {
     return {
       block: this.props,
       button: this.props.button
-    }
-  },
-  methods: {
-    imgSrc() {
-      const imgName = this.block.image.replace('/', '');
-      return require(`~/assets/uploads/${imgName}`)
     }
   },
 }
