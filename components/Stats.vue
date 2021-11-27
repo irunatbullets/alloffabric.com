@@ -1,6 +1,6 @@
 <template>
   <dl class="stats">
-    <div v-for="stat in stats" :key="stat" class="stats__item">
+    <div v-for="(stat, index) in stats" :key="index" class="stats__item">
       <dt class="stats__title">{{stat.title}}</dt>
       <dd class="stats__text">{{stat.text}}</dd>
     </div>
@@ -14,8 +14,8 @@ export default {
       type: Array,
       default: () => ([
         {
-          title: '',
-          text: ''
+          'title': '',
+          'text': ''
         }
       ])
     }

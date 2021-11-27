@@ -34,8 +34,8 @@ export default {
       required: true,
     },
     categories: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => ({}),
     },
     modCount: {
       type: Number,

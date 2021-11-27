@@ -1,6 +1,6 @@
 ---
 blocks:
-- template: ctas
+- template: news
   ctas: []
   title: ''
 - template: welcome

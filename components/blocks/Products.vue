@@ -9,13 +9,7 @@
         :name="product.name"
         :img="product.image"
         :description="product.description"
-        :categories="[
-          'Exploration',
-          'Extra large',
-          'Magic',
-          'Quests',
-          'Tech'
-        ]"
+        :categories="product.categories"
         :mod-count="product.mod_count"
       />
     </div>
