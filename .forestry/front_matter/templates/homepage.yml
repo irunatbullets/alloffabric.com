@@ -5,7 +5,7 @@ fields:
 - name: blocks
   type: blocks
   template_types:
-  - ctas
+  - news
   - welcome
   - products
   - content-section

@@ -1,12 +1,13 @@
 <template>
   <div class="product">
-    <img :src="imgSrc()" :alt="name + ' title screen'" class="product__image" />
+    {{color}}
+    <img :src="image" :alt="name + ' title screen'" class="product__image" />
     <div class="product__details">
       <h2 class="product__name">{{ name }}</h2>
       <p class="product__description">{{ description }}</p>
       <categories :categories="categories" extra-classes="product__categories" />
       <p class="product__summary">Minecraft <span class="product__type">{{ type }}</span><span v-if="type === 'Modpack'"><br/>{{ modCount }}+ Mods</span></p>
-      <action href="#">Play Now</action>
+      <action :href="button.url" :color="button.color">{{button.text}}</action>
     </div>
   </div>
 </template>
@@ -18,14 +19,14 @@ export default {
       type: String,
       required: true,
       validator (value) {
-        return ['Modpack', 'Mod'].includes(value)
+        return ['modpack', 'mod'].includes(value)
       }
     },
     name: {
       type: String,
       required: true,
     },
-    img: {
+    image: {
       type: String,
       required: true,
     },
@@ -34,18 +35,24 @@ export default {
       required: true,
     },
     categories: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => ({}),
     },
     modCount: {
       type: Number,
       default: 0
-    }
-  },
-  methods: {
-    imgSrc(img) {
-      const imgName = this.img.replace('/', '');
-      return require(`~/assets/images/${imgName}`)
+    },
+    button: {
+      type: Object,
+      default:() => ({
+        'color': 'orange',
+        'text': 'Click',
+        'url': '#'
+      })
+    },
+    color: {
+      type: String,
+      default: 'white'
     }
   },
 }

@@ -7,16 +7,12 @@
       <product
         :type="product.type"
         :name="product.name"
-        :img="product.image"
+        :image="product.image"
         :description="product.description"
-        :categories="[
-          'Exploration',
-          'Extra large',
-          'Magic',
-          'Quests',
-          'Tech'
-        ]"
+        :categories="product.categories"
         :mod-count="product.mod_count"
+        :button="product.button"
+        :color="product.color"
       />
     </div>
 

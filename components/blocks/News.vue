@@ -3,6 +3,8 @@
 
     {{block.template}}
 
+    {{ctas}}
+
   </div>
 </template>
 
@@ -16,8 +18,12 @@ export default {
   },
   data() {
     return {
-      block: this.props
+      block: this.props,
+      ctas: []
     }
-  }
+  },
+  async fetch () {
+    this.ctas = await this.$content('ctas').fetch()
+  },
 }
 </script>

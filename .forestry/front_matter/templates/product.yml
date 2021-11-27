@@ -42,8 +42,8 @@ fields:
   config:
     required: false
     options:
-    - Modpack
-    - Mod
+    - modpack
+    - mod
     source:
       type: simple
       section:
@@ -62,7 +62,7 @@ fields:
     step:
   showOnly:
     field: type
-    value: Modpack
+    value: modpack
 - name: button
   type: include
   config: {}

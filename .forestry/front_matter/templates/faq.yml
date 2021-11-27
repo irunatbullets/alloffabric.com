@@ -1,6 +1,6 @@
 ---
 label: FAQ
-hide_body: false
+hide_body: true
 fields:
 - name: date_added
   type: datetime
@@ -8,16 +8,16 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format:
+    time_format:
     display_utc: false
   default: now
 - name: title
   type: text
   config:
     required: false
-  label: Title
-- name: text
+  label: Question
+- name: content
   type: textarea
   default: ''
   config:
@@ -25,4 +25,14 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Text
+  label: Answer
+- name: file
+  type: file
+  config:
+    maxSize: 64
+  label: File
+pages:
+- content/faqs/can-you-add-astromine-back-how-come-astromine-is-gone.md
+- content/faqs/how-do-i-get-my-server-to-generate-simplex-terrain.md
+- content/faqs/how-do-i-get-whitelisted.md
+- content/faqs/where-can-i-find-art-for-my-content-youtube-twitch-etc.md

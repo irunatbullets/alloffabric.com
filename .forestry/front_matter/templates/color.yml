@@ -8,17 +8,17 @@ fields:
   config:
     required: false
     options:
-    - Red
-    - Orange
-    - Yellow
-    - Green
-    - Blue
-    - Purple
-    - Pink
-    - White
+    - red
+    - orange
+    - yellow
+    - green
+    - blue
+    - purple
+    - pink
+    - white
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Color

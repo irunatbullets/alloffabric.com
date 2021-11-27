@@ -1,17 +1,19 @@
 <template>
-    <ul v-if="categories && categories.length" class="categories" :class="extraClasses">
-      <li v-for="(category, index) in categories" :key="category" class="categories__item">
-        <icon :name="iconNames[index]" />
+  <div>
+    <ul v-if="categoryArray && categoryArray.length" class="categories" :class="extraClasses">
+      <li v-for="(category, index) in categoryArray" :key="index" class="categories__item">
+        <icon :name="category" />
       </li>
     </ul>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
     categories: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => ({}),
       required: true
     },
     extraClasses: {
@@ -20,9 +22,9 @@ export default {
     }
   },
   computed: {
-    iconNames() {
-      return [...this.categories].map(category => category.toLowerCase().replace(' ', '-'));
-    },
+    categoryArray () {
+      return Object.keys(this.categories).filter(category => this.categories[category])
+    }
   }
 }
 </script>
