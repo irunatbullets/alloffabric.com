@@ -7,8 +7,8 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format:
+    time_format:
     display_utc: false
   label: Release date
   default: now
@@ -42,13 +42,13 @@ fields:
   config:
     required: false
     options:
-    - Modpack
-    - Mod
+    - modpack
+    - mod
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Type
 - name: mod_count
   type: number
@@ -57,12 +57,12 @@ fields:
   default: 0
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min:
+    max:
+    step:
   showOnly:
     field: type
-    value: Modpack
+    value: modpack
 - name: button
   type: include
   config: {}

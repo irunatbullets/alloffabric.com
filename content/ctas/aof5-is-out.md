@@ -5,10 +5,10 @@ categories:
   magic: true
   quests: true
   tech: true
-type: Modpack
+type: modpack
 mod_count: 180
 button:
-  color: Orange
+  color: orange
   text: Play now
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-5
 image: "/cta-aof5.png"

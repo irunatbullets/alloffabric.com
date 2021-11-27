@@ -18,16 +18,16 @@ fields:
     label: URL
   - name: color
     type: select
-    default: Orange
+    default: orange
     config:
       required: false
       options:
-      - Orange
-      - White
+      - orange
+      - white
       source:
         type: simple
-        section: 
-        file: 
-        path: 
+        section:
+        file:
+        path:
     label: Color
   label: Button

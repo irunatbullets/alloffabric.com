@@ -5,10 +5,10 @@ blocks:
   title: ''
 - template: welcome
   button:
-    color: White
+    color: white
     text: Join us
     url: "#"
-  color: Red
+  color: red
   title: Welcome to All of Fabric
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
@@ -29,7 +29,7 @@ blocks:
 - template: products
   title: Our modpacks
 - template: content-section
-  color: Yellow
+  color: yellow
   title: "Our \Lcommunity"
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
@@ -42,7 +42,7 @@ blocks:
   sections:
   - template: text-block
     button:
-      color: Orange
+      color: orange
       text: Check the FAQ
       url: "#"
     title: Need help?
@@ -55,7 +55,7 @@ blocks:
     image: ''
   - template: text-block
     button:
-      color: Orange
+      color: orange
       text: Join us
       url: "#"
     title: 24/7 on Discord
@@ -67,7 +67,7 @@ blocks:
     include_image: false
     image: ''
 - template: content-section
-  color: Pink
+  color: pink
   title: Support our team
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
@@ -80,7 +80,7 @@ blocks:
   sections:
   - template: text-block
     button:
-      color: Orange
+      color: orange
       text: ''
       url: ''
     title: Custom items, skins and more
@@ -98,6 +98,6 @@ blocks:
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
     Ut neque dolorem aut dignissim
   faqs: []
-  color: Purple
+  color: purple
 
 ---

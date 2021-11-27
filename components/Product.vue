@@ -1,5 +1,6 @@
 <template>
   <div class="product">
+    {{color}}
     <img :src="image" :alt="name + ' title screen'" class="product__image" />
     <div class="product__details">
       <h2 class="product__name">{{ name }}</h2>
@@ -18,7 +19,7 @@ export default {
       type: String,
       required: true,
       validator (value) {
-        return ['Modpack', 'Mod'].includes(value)
+        return ['modpack', 'mod'].includes(value)
       }
     },
     name: {
@@ -44,10 +45,14 @@ export default {
     button: {
       type: Object,
       default:() => ({
-        'color': 'Orange',
+        'color': 'orange',
         'text': 'Click',
         'url': '#'
       })
+    },
+    color: {
+      type: String,
+      default: 'white'
     }
   },
 }

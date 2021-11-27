@@ -3,8 +3,8 @@
     :is="element"
     :href="href"
     :class="{
-      'button--orange': colorLowercase === 'orange',
-      'button--white': colorLowercase === 'white',
+      'button--orange': color === 'orange',
+      'button--white': color === 'white',
     }"
     class="button">
     <slot/>
@@ -35,9 +35,6 @@
           return 'button'
         }
       },
-      colorLowercase() {
-        return this.color.toLowerCase().trim();
-      }
     }
   }
 </script>

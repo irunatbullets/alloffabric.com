@@ -6,13 +6,13 @@ categories:
   magic: true
   quests: true
   tech: true
-type: Modpack
+type: modpack
 mod_count: 180
 button:
-  color: Orange
+  color: orange
   text: Play now
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-5
-color: Green
+color: green
 name: AOF5
 image: "/modpack-aof5.png"
 description: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
