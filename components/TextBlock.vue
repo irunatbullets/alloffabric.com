@@ -24,7 +24,7 @@ export default {
   methods: {
     imgSrc() {
       const imgName = this.block.image.replace('/', '');
-      return require(`~/assets/images/${imgName}`)
+      return require(`~/assets/uploads/${imgName}`)
     }
   },
 }

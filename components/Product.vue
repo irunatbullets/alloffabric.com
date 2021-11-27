@@ -53,7 +53,7 @@ export default {
   methods: {
     imgSrc() {
       const imgName = this.img.replace('/', '');
-      return require(`~/assets/images/${imgName}`)
+      return require(`~/assets/uploads/${imgName}`)
     }
   },
 }
