@@ -49,3 +49,5 @@ fields:
   config: {}
   template: button
   label: Button
+pages:
+- content/CTAs/aof5-is-out.md
