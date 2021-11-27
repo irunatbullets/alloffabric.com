@@ -26,3 +26,5 @@ fields:
     schema:
       format: markdown
   label: Text
+pages:
+- content/faqs/how-do-i-blah-blah.md
