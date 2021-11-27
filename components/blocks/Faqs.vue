@@ -1,7 +1,9 @@
 <template>
   <div>
 
-    {{block.template}}
+    <h1>{{block.template}}</h1>
+    {{block}}
+    {{faqs}}
 
   </div>
 </template>
@@ -16,8 +18,12 @@ export default {
   },
   data() {
     return {
-      block: this.props
+      block: this.props,
+      faqs: []
     }
+  },
+  async fetch() {
+    this.faqs = await this.$content('faqs').sortBy('date_added', 'desc').fetch()
   }
 }
 </script>

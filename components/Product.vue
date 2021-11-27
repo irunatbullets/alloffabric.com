@@ -6,7 +6,7 @@
       <p class="product__description">{{ description }}</p>
       <categories :categories="categories" extra-classes="product__categories" />
       <p class="product__summary">Minecraft <span class="product__type">{{ type }}</span><span v-if="type === 'Modpack'"><br/>{{ modCount }}+ Mods</span></p>
-      <action href="#">Play Now</action>
+      <action :href="button.url" :color="button.color">{{button.text}}</action>
     </div>
   </div>
 </template>
@@ -40,10 +40,18 @@ export default {
     modCount: {
       type: Number,
       default: 0
+    },
+    button: {
+      type: Object,
+      default:() => ({
+        'color': 'Orange',
+        'text': 'Click',
+        'url': '#'
+      })
     }
   },
   methods: {
-    imgSrc(img) {
+    imgSrc() {
       const imgName = this.img.replace('/', '');
       return require(`~/assets/images/${imgName}`)
     }

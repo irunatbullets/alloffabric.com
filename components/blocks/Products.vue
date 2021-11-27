@@ -11,6 +11,7 @@
         :description="product.description"
         :categories="product.categories"
         :mod-count="product.mod_count"
+        :button="product.button"
       />
     </div>
 
