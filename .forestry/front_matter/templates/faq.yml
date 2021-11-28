@@ -26,11 +26,12 @@ fields:
     schema:
       format: markdown
   label: Answer
-- name: file_link
+- name: file_name
   type: text
   config:
     required: false
-  label: File link
+  label: File name
+  description: Name of file uploaded to static/
 pages:
 - content/faqs/can-you-add-astromine-back-how-come-astromine-is-gone.md
 - content/faqs/how-do-i-get-my-server-to-generate-simplex-terrain.md
