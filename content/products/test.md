@@ -12,7 +12,7 @@ button:
   color: orange
   text: Hello
   url: https://www.gooogle.com
-color: ''
+color: yellow
 title: Test
 image: "/uploads/cta-aof5.png"
 description: Lol
