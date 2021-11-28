@@ -11,7 +11,7 @@ button:
   color: orange
   text: Play now
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-5
-image: "/cta-aof5.png"
+image: "cta-aof5.png"
 title: AOF5 is out
 
 ---

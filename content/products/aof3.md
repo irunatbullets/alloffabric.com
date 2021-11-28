@@ -14,7 +14,7 @@ button:
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-3
 color: red
 name: AOF3
-image: "/modpack-aof3.png"
+image: "modpack-aof3.png"
 description: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
   eaque et adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est
   consectetur voluptatem.
