@@ -26,7 +26,7 @@ fields:
     schema:
       format: markdown
   label: Answer
-- name: file_name
+- name: file
   type: text
   config:
     required: false
