@@ -74,6 +74,7 @@ fields:
   template: color
   label: Color
 pages:
+- content/products/Test.md
 - content/products/aof3.md
 - content/products/aof4.md
 - content/products/aof5.md
