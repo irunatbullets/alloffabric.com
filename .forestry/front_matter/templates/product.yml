@@ -38,7 +38,7 @@ fields:
   label: Categories
 - name: type
   type: select
-  default: Modpack
+  default: modpack
   config:
     required: false
     options:
