@@ -1,10 +1,18 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container" :class="{'container--compact' : compact}">
     <div class="container__inner">
       <slot />
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    compact: Boolean
+  }
+}
+</script>
 
 <style lang="postcss">
   .container {
@@ -29,5 +37,10 @@
     @media (--laptop) {
       padding: 144px 60px 144px 160px;
     }
+  }
+
+  .container--compact .container__inner {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 </style>
