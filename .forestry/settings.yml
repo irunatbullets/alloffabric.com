@@ -34,9 +34,9 @@ sections:
   match: "**/*"
   templates:
   - cta
-upload_dir: 'assets/uploads'
-public_path: '_nuxt/uploads'
-front_matter_path: '~/assets/uploads'
+upload_dir: assets/uploads
+public_path: _nuxt/assets/uploads
+front_matter_path: "~/assets/uploads"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
