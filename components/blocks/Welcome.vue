@@ -1,19 +1,8 @@
 <template>
-  <div>
-
-    <icon name="aof-logo" />
-
+  <panel :color="block.color">
     <hero :title="block.title" :text="block.text" :link="block.button" />
-
-    <!--
-      <h1>{{block.title}}</h1>
-      <p>{{block.text}}</p>
-      <action :color="buttonColor">{{button.text}}</action>
-    -->
-
     <stats :stats="block.stats" />
-
-  </div>
+  </panel>
 </template>
 
 <script>

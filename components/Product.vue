@@ -1,15 +1,16 @@
 <template>
-  <div class="product">
-    {{color}}
-    <img :src="$fileName(image)" :alt="name + ' title screen'" class="product__image" />
-    <div class="product__details">
-      <h2 class="product__name">{{ name }}</h2>
-      <p class="product__description">{{ description }}</p>
-      <categories :categories="categories" extra-classes="product__categories" />
-      <p class="product__summary">Minecraft <span class="product__type">{{ type }}</span><span v-if="type === 'Modpack'"><br/>{{ modCount }}+ Mods</span></p>
-      <action :href="button.url" :color="button.color">{{button.text}}</action>
+  <panel :color="color">
+    <div class="product">
+      <img :src="$fileName(image)" :alt="name + ' title screen'" class="product__image" />
+      <div class="product__details">
+        <h2 class="product__name">{{ name }}</h2>
+        <p class="product__description">{{ description }}</p>
+        <categories :categories="categories" extra-classes="product__categories" />
+        <p class="product__summary">Minecraft <span class="product__type">{{ type }}</span><span v-if="type === 'Modpack'"><br/>{{ modCount }}+ Mods</span></p>
+        <action :href="button.url" :color="button.color">{{button.text}}</action>
+      </div>
     </div>
-  </div>
+  </panel>
 </template>
 
 <script>
