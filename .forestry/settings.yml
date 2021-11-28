@@ -35,7 +35,7 @@ sections:
   templates:
   - cta
 upload_dir: static/uploads
-public_path: ''
+public_path: uploads
 front_matter_path: uploads
 use_front_matter_path: true
 file_template: ":filename:"
