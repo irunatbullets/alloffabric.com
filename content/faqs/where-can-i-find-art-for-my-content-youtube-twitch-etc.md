@@ -4,5 +4,6 @@ title: Where can I find art for my content (Youtube, Twitch etc)?
 content: ''
 file: "/aof3_content_creator_pack.zip"
 file_link: aof3_content_creator_pack.zip
+file_name: aof3_content_creator_pack.zip
 
 ---
