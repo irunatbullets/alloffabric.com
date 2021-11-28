@@ -14,7 +14,7 @@ button:
   url: ''
 color: ''
 title: test
-image: ''
+image: ":filename:/modpack-aof5.png"
 description: ''
 
 ---
