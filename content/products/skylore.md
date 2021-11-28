@@ -17,6 +17,6 @@ name: Skylore
 image: "/modpack-skylore.png"
 description: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui
   numquam eaque et adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor
-  est consectetur voluptatem
+  est consectetur voluptatem.
 
 ---
