@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: directory
   path: content
@@ -34,10 +34,10 @@ sections:
   match: "**/*"
   templates:
   - cta
-upload_dir: static
-public_path: ''
-front_matter_path: ''
-use_front_matter_path: false
+upload_dir: 'assets/uploads'
+public_path: '_nuxt/uploads'
+front_matter_path: '~/assets/uploads'
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: ".nuxt"
