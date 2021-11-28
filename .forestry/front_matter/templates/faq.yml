@@ -31,7 +31,7 @@ fields:
   config:
     required: false
   label: File link
-  description: Files should be uploaded to the `static
+  description: Upload files to static/ on dev branch
 pages:
 - content/faqs/can-you-add-astromine-back-how-come-astromine-is-gone.md
 - content/faqs/how-do-i-get-my-server-to-generate-simplex-terrain.md
