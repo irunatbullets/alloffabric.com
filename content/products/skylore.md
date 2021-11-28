@@ -1,5 +1,5 @@
 ---
-release_date: 2022-03-01T15:00:55Z
+release_date: 2022-03-01T15:00:55.000+00:00
 categories:
   exploration: true
   extra-large: true
@@ -15,8 +15,8 @@ button:
 color: purple
 name: Skylore
 image: "/modpack-skylore.png"
-description: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
-  eaque et adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est
-  consectetur voluptatem.
+description: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui
+  numquam eaque et adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor
+  est consectetur voluptatem
 
 ---
