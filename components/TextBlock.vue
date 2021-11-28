@@ -3,7 +3,7 @@
     <h2>{{block.title}}</h2>
     <p>{{block.text}}</p>
     <action v-if="button.url && button.text" :href="button.url" :color="button.color">{{button.text}}</action>
-    <img v-if="block.image" :src="$fileName(block.image)" alt="" />
+    <img v-if="block.image" :src="require(`~/assets/uploads${block.image}`)" alt="" />
   </div>
 </template>
 

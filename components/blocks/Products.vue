@@ -6,7 +6,7 @@
     <div v-for="(product, index) in products" :key="index">
       <product
         :type="product.type"
-        :name="product.name"
+        :title="product.title"
         :image="product.image"
         :description="product.description"
         :categories="product.categories"

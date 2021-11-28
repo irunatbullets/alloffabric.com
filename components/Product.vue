@@ -1,9 +1,9 @@
 <template>
   <panel :color="color">
     <div class="product">
-      <img :src="require(`~/assets/uploads/${image}`)" :alt="name + ' title screen'" class="product__image" />
+      <img :src="require(`~/assets/uploads${image}`)" :alt="title + ' title screen'" class="product__image" />
       <div class="product__details">
-        <h2 class="product__name">{{ name }}</h2>
+        <h2 class="product__name">{{ title }}</h2>
         <p class="product__description">{{ description }}</p>
         <categories :categories="categories" extra-classes="product__categories" />
         <p class="product__summary">Minecraft <span class="product__type">{{ type }}</span><span v-if="type === 'Modpack'"><br/>{{ modCount }}+ Mods</span></p>
@@ -23,7 +23,7 @@ export default {
         return ['modpack', 'mod'].includes(value)
       }
     },
-    name: {
+    title: {
       type: String,
       required: true,
     },
