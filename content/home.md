@@ -25,7 +25,7 @@ blocks:
     text: Less than 4 minutes for the pack to load
   - title: 4GB
     text: 4GB of Ram is all you need for fluid gameplay (even with shaders!)
-  image: "/uploads/placeholder-large.png"
+  image: "uploads/placeholder-large.png"
 - template: products
   title: Our modpacks
 - template: content-section
@@ -38,7 +38,7 @@ blocks:
     et nobis autem non architecto quia! Aut distinctio rerum qui numquam eaque et
     adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
     voluptatem.
-  image: "/uploads/placeholder-large.png"
+  image: "uploads/placeholder-large.png"
   sections:
   - template: text-block
     button:
@@ -76,7 +76,7 @@ blocks:
     et nobis autem non architecto quia! Aut distinctio rerum qui numquam eaque et
     adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
     voluptatem.
-  image: "/uploads/placeholder-large.png"
+  image: "uploads/placeholder-large.png"
   sections:
   - template: text-block
     button:
@@ -89,7 +89,7 @@ blocks:
       excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
       officia deserunt mollitia animi, id est laborum et dolorum fuga.
     include_image: true
-    image: "/uploads/placeholder-small.png"
+    image: "uploads/placeholder-small.png"
     include_button: false
 - template: faqs
   title: FAQ

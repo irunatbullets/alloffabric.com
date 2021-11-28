@@ -14,7 +14,7 @@ button:
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-5
 color: green
 title: AOF5
-image: "/uploads/modpack-aof5.png"
+image: "uploads/modpack-aof5.png"
 description: Possimus et nobis autem non architecto quia! Aut distinctio rerum qui numquam
   eaque et adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est
   consectetur voluptatem.
