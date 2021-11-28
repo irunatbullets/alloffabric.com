@@ -26,11 +26,12 @@ fields:
     schema:
       format: markdown
   label: Answer
-- name: file
-  type: file
+- name: file_link
+  type: text
   config:
-    maxSize: 64
-  label: File
+    required: false
+  label: File link
+  description: Files should be uploaded to the `static
 pages:
 - content/faqs/can-you-add-astromine-back-how-come-astromine-is-gone.md
 - content/faqs/how-do-i-get-my-server-to-generate-simplex-terrain.md
