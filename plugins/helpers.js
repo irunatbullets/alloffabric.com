@@ -1,6 +1,6 @@
 const fileName = (string) => string.replace('/', '')
 const lowerCase = (string) => string.toLowerCase().trim()
-const imageSrc = (string) => require(`~/assets/uploads/${string}`)
+const imageSrc = (string) => require(`~/assets/uploads/${fileName(string)}`)
 
 
 

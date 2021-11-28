@@ -1,7 +1,7 @@
 <template>
   <panel :color="color">
     <div class="product">
-      <img :src="require(`~/assets/uploads${image}`)" :alt="title + ' title screen'" class="product__image" />
+      <img :src="require(`~/assets/uploads/${$fileName(image)}`)" :alt="title + ' title screen'" class="product__image" />
       <div class="product__details">
         <h2 class="product__name">{{ title }}</h2>
         <p class="product__description">{{ description }}</p>
