@@ -16,5 +16,9 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    // We're not expecting user written markdown, so this should be fine unless
+    // we add comment sections...
+    'vue/no-v-html': 'off',
+  }
 }

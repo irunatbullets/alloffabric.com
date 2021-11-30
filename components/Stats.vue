@@ -1,5 +1,5 @@
 <template>
-  <dl class="stats">
+  <dl class="stats" :class="extraClasses">
     <div v-for="(stat, index) in stats" :key="index" class="stats__item">
       <dt class="stats__title">{{stat.title}}</dt>
       <dd class="stats__text">{{stat.text}}</dd>
@@ -18,6 +18,10 @@ export default {
           'text': ''
         }
       ])
+    },
+    extraClasses: {
+      type: String,
+      default: '',
     }
   }
 }
@@ -25,18 +29,36 @@ export default {
 
 <style lang="postcss">
 .stats__item {
-  margin-bottom: 30px;
+  margin-bottom: clamp(12px, 3.2vw, 30px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  /* @media (--large-desktop) {
+    margin-bottom: 30px;
+  } */
 }
 
 .stats__title {
-  font-size: 60px;
+  font-size: clamp(32px, 8.533vw, 60px);
   font-weight: 900;
   line-height: 1;
-  margin-bottom: 12px;
+  margin-bottom: clamp(3px, 0.09375em, 12px);
+
+  /* @media (--large-desktop) {
+    font-size: 60px;
+    margin-bottom: 12px;
+  } */
 }
 
 .stats__text {
-  font-size: 18px;
+  font-size: clamp(13px, 3.466666666666667vw, 18px);
   margin-left: 0;
+  max-width: 18ch;
+
+  /* @media (--large-desktop) {
+    font-size: 18px;
+  } */
 }
 </style>

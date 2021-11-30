@@ -1,12 +1,16 @@
 :root {
-
-
   /* Colors */
   --aof-red: #FF5252;
   --aof-orange: #F64013;
   --aof-yellow: #FFBE41;
-  --aof-green: #3FAB77;
+  --aof-green: #3FAB7E;
   --aof-blue: #54BDBB;
-  --aof-purple: #5B3B51;
+  --aof-purple: #522887;
   --aof-pink: #FFA09A;
+
+  /* Font weights */
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --black: 900;
 }

@@ -1,5 +1,5 @@
 ---
-label: Product
+label: Modpack
 hide_body: true
 fields:
 - name: release_date
@@ -7,8 +7,8 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format:
+    time_format:
     display_utc: false
   label: Release date
   default: now
@@ -46,9 +46,9 @@ fields:
     - mod
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Type
 - name: mod_count
   type: number
@@ -57,9 +57,9 @@ fields:
   default: 0
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min:
+    max:
+    step:
   showOnly:
     field: type
     value: modpack
@@ -74,7 +74,7 @@ fields:
   template: color
   label: Color
 pages:
-- content/products/aof3.md
-- content/products/aof4.md
-- content/products/aof5.md
-- content/products/skylore.md
+- content/modpacks/aof3.md
+- content/modpacks/aof4.md
+- content/modpacks/aof5.md
+- content/modpacks/skylore.md

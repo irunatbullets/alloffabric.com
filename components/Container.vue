@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="{'container--compact' : compact}">
+  <div class="container" :class="{ 'container--compact': compact }">
     <div class="container__inner">
       <slot />
     </div>
@@ -15,6 +15,7 @@ export default {
 </script>
 
 <style lang="postcss">
+/*
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -43,4 +44,5 @@ export default {
     padding-top: 0;
     padding-bottom: 0;
   }
+*/
 </style>
