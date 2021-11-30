@@ -6,8 +6,8 @@
       </div>
       <h1 class="welcome__title">{{block.title}}</h1>
       <div class="welcome__content">
-        <div v-html="$md.render(block.text)"></div>
-        <action :href="block.button.url" :color="block.button.color">{{block.button.text}}</action>
+        <div class="welcome__text" v-html="$md.render(block.text)"></div>
+        <action :href="block.button.url" :color="block.button.color" extra-classes="welcome__button">{{block.button.text}}</action>
       </div>
       <stats :stats="block.stats" extra-classes="welcome__stats" />
     </div>
@@ -91,10 +91,6 @@ export default {
 .welcome__content {
   margin-bottom: 16px;
 
-  & > div {
-    margin-bottom: clamp(20px, 5.333333333333333vw, 30px);
-  }
-
   @media (--sm) {
     grid-column: 5 / span 5;
     grid-row: 3;
@@ -119,19 +115,28 @@ export default {
     margin-right: 0;
     margin-bottom: 0;
     align-items: start;
+  }
+}
 
-    & > div {
+.welcome__text {
+  margin-bottom: clamp(20px, 5.333333333333333vw, 30px);
+
+  @media (--desktop) {
       order: 9999;
       grid-column: 2 / span 2;
       margin-bottom: 0;
-    }
+  }
+}
 
-    & > .button {
-      grid-column: 1 / span 1;
-      align-self: top;
-      padding-left: 0;
-      padding-right: 0;
-    }
+.welcome__button {
+  @media (--desktop) {
+    grid-column: 1 / span 1;
+    align-self: top;
+    /* Nuxt doesn't allow me to control the load order of css from other
+    /* components, so I'm having to use !important to override a component
+    /* that should be loaded before this file... smh */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 

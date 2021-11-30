@@ -3,7 +3,8 @@
     <h1>{{block.title}}</h1>
 
     <panel v-for="(modpack, index) in modpacks" :key="index" :color="modpack.color">
-
+      <h2>{{modpack.title}}</h2>
+      <div v-html="$md.render(modpack.description)"></div>
 
 
     </panel>

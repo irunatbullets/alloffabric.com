@@ -61,12 +61,6 @@
   &:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.125);
   }
-
-  /* @media (--large-desktop) {
-    font-size: 16px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  } */
 }
 
 .button--orange {

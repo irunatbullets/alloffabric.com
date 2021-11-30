@@ -6,7 +6,6 @@ categories:
   magic: true
   quests: false
   tech: true
-type: modpack
 mod_count: 180
 button:
   color: orange

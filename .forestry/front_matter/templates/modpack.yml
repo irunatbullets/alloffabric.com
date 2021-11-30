@@ -36,20 +36,6 @@ fields:
   config: {}
   template: categories
   label: Categories
-- name: type
-  type: select
-  default: modpack
-  config:
-    required: false
-    options:
-    - modpack
-    - mod
-    source:
-      type: simple
-      section:
-      file:
-      path:
-  label: Type
 - name: mod_count
   type: number
   label: Mod count
@@ -60,9 +46,6 @@ fields:
     min:
     max:
     step:
-  showOnly:
-    field: type
-    value: modpack
 - name: button
   type: include
   config: {}
