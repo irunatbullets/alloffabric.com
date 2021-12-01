@@ -2,10 +2,10 @@
   <component
     :is="element"
     :href="href"
-    :class="{
+    :class="[{
       'button--orange': color === 'orange',
       'button--white': color === 'white',
-    }"
+    }, extraClasses]"
     class="button">
     <slot/>
   </component>
@@ -25,6 +25,10 @@
       color: {
         type: String,
         default: 'orange'
+      },
+      extraClasses: {
+        type: String,
+        default: ''
       }
     },
     computed: {
@@ -43,10 +47,12 @@
 .button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: inline-block;
-  font-size: 16px;
+  min-width: min-content;
+  font-size: clamp(13px, 3.466666666666667vw, 16px);
   font-weight: 900;
   line-height: 1;
-  padding: 20px 30px;
+  padding: clamp(13px, 3.466666666666667vw, 20px) clamp(30px, 8vw, 40px);
+  text-align: center;
   text-transform: uppercase;
   transition: box-shadow 75ms ease-in-out;
   user-select: none;

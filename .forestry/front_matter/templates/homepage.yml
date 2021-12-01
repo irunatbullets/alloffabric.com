@@ -7,12 +7,12 @@ fields:
   template_types:
   - news
   - welcome
-  - products
+  - modpacks
   - content-section
   - faqs
   config:
-    min: 
-    max: 
+    min:
+    max:
   label: Blocks
 pages:
 - content/home.md

@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <ul v-if="categoryArray && categoryArray.length" class="categories" :class="extraClasses">
-      <li v-for="(category, index) in categoryArray" :key="index" class="categories__item">
-        <icon :name="category" />
-      </li>
-    </ul>
-  </div>
+  <ul
+    v-if="categoryArray && categoryArray.length"
+    class="categories"
+    :class="extraClasses"
+  >
+    <li
+      v-for="(category, index) in categoryArray"
+      :key="index"
+      class="categories__item"
+    >
+      <icon :name="category" />
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -22,8 +28,10 @@ export default {
     }
   },
   computed: {
-    categoryArray () {
-      return Object.keys(this.categories).filter(category => this.categories[category])
+    categoryArray() {
+      return Object.keys(this.categories).filter(
+        (category) => this.categories[category]
+      )
     }
   }
 }
@@ -32,9 +40,13 @@ export default {
 <style lang="postcss">
 .categories {
   list-style: none;
-  display: inline-flex;
-  gap: 18px;
-  margin-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
   padding-left: 0;
+
+  @media (--large-desktop) {
+    gap: 18px;
+  }
 }
 </style>

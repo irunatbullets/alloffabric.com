@@ -1,8 +1,6 @@
 <template>
   <div :class="panelClasses">
-    <container>
-      <slot />
-    </container>
+    <slot />
   </div>
 </template>
 

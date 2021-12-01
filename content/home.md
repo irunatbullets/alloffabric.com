@@ -26,7 +26,7 @@ blocks:
   - title: 4GB
     text: 4GB of Ram is all you need for fluid gameplay (even with shaders!)
   image: uploads/placeholder-large.png
-- template: products
+- template: modpacks
   title: Our modpacks
 - template: content-section
   color: yellow
