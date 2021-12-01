@@ -6,7 +6,7 @@
         <h2 class="modpack__name">{{ title }}</h2>
         <p class="modpack__description">{{ description }}</p>
         <categories :categories="categories" extra-classes="modpack__categories" />
-        <p class="modpack__summary">Minecraft <span class="modpack__type">{{ type }}</span><span v-if="type === 'modpack'"><br/>{{ modCount }}+ Mods</span></p>
+        <p class="modpack__summary">Minecraft MODPACK<br/>{{ modCount }}+ Mods</p>
         <action :href="button.url" :color="button.color" extra-classes="modpack__action">{{button.text}}</action>
       </div>
     </div>
@@ -16,13 +16,6 @@
 <script>
 export default {
   props: {
-    type: {
-      type: String,
-      required: true,
-      validator (value) {
-        return ['modpack', 'mod'].includes(value)
-      }
-    },
     title: {
       type: String,
       required: true,

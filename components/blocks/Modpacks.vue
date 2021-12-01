@@ -1,15 +1,16 @@
 <template>
   <div>
     <h1>{{block.title}}</h1>
-
+<!--
     <panel v-for="(modpack, index) in modpacks" :key="index" :color="modpack.color">
-      <h2>{{modpack.title}}</h2>
-      <div v-html="$md.render(modpack.description)"></div>
-
-
+      <div class="modpack">
+        <h2>{{modpack.title}}</h2>
+        <div v-html="$md.render(modpack.description)"></div>
+        <categories :categories="modpack.categories" />
+      </div>
     </panel>
+-->
 
-    <!--
     <modpack
       v-for="(modpack, index) in modpacks"
       :key="index"
@@ -22,7 +23,7 @@
       :button="modpack.button"
       :color="modpack.color"
     />
-    -->
+
 
   </div>
 </template>
