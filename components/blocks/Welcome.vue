@@ -4,10 +4,15 @@
       <div class="welcome__image">
         <img :src="block.image" alt="" />
       </div>
-      <h1 class="welcome__title">{{block.title}}</h1>
+      <h1 class="welcome__title">{{ block.title }}</h1>
       <div class="welcome__content">
         <div class="welcome__text" v-html="$md.render(block.text)"></div>
-        <action :href="block.button.url" :color="block.button.color" extra-classes="welcome__button">{{block.button.text}}</action>
+        <action
+          :href="block.button.url"
+          :color="block.button.color"
+          extra-classes="welcome__button"
+          >{{ block.button.text }}</action
+        >
       </div>
       <stats :stats="block.stats" extra-classes="welcome__stats" />
     </div>
@@ -20,26 +25,25 @@ export default {
     props: {
       type: Object,
       default: () => ({})
-    },
+    }
   },
   data() {
     return {
-      block: this.props,
+      block: this.props
     }
-  },
+  }
 }
 </script>
 
 <style lang="postcss">
-
 .welcome {
-  padding: 10px;
+  padding: 20px;
 
-  @media (--sm) {
+  @media (--phone) {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
     grid-auto-rows: minmax(min-content, max-content);
-    padding: 112px 0 6.933333333333333vw;
+    padding: 112px 0 7vw;
   }
 
   @media (--desktop) {
@@ -50,7 +54,7 @@ export default {
 .welcome__image {
   margin-bottom: 16px;
 
-  @media (--sm) {
+  @media (--phone) {
     grid-column: 1 / span 9;
     grid-row: 1;
     padding-left: 20px;
@@ -71,15 +75,11 @@ export default {
 }
 
 .welcome__title {
-  @media (--sm) {
+  @media (--phone) {
     grid-column: 2 / span 7;
     grid-row: 2;
     margin-top: -95px;
   }
-
-  /* @media (--laptop) {
-    grid-column-start: 3;
-  } */
 
   @media (--desktop) {
     grid-column-start: 2;
@@ -91,7 +91,7 @@ export default {
 .welcome__content {
   margin-bottom: 16px;
 
-  @media (--sm) {
+  @media (--phone) {
     grid-column: 5 / span 5;
     grid-row: 3;
     order: 9999;
@@ -101,7 +101,6 @@ export default {
   }
 
   @media (--laptop) {
-    /* grid-column-start: 6; */
     max-width: 40ch;
   }
 
@@ -119,12 +118,12 @@ export default {
 }
 
 .welcome__text {
-  margin-bottom: clamp(20px, 5.333333333333333vw, 30px);
+  margin-bottom: clamp(20px, 5vw, 30px);
 
   @media (--desktop) {
-      order: 9999;
-      grid-column: 2 / span 2;
-      margin-bottom: 0;
+    order: 9999;
+    grid-column: 2 / span 2;
+    margin-bottom: 0;
   }
 }
 
@@ -143,7 +142,7 @@ export default {
 .welcome__stats {
   margin-bottom: 0;
 
-  @media (--sm) {
+  @media (--phone) {
     display: block;
     grid-column: 2 / span 3;
     grid-row: 3;
@@ -151,13 +150,9 @@ export default {
     margin-right: 2.666666666666667%;
   }
 
-    @media (--tablet) {
+  @media (--tablet) {
     margin-right: 0;
   }
-
-  /* @media (--laptop) {
-    grid-column-start: 3;
-  } */
 
   @media (--desktop) {
     grid-column: -3 / span 2;

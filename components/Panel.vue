@@ -1,6 +1,8 @@
 <template>
   <div :class="panelClasses">
-    <slot />
+    <div class="panel__inner">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -23,7 +25,17 @@ export default {
 <style lang="postcss">
 .panel {
   color: white;
-  min-height: 100vh;
+  display: flex;
+  margin-bottom: 10px;
+
+  @media (--phone) {
+    min-height: 100vh;
+    margin-bottom: 0;
+  }
+}
+
+.panel__inner {
+  width: 100%;
 }
 
 .panel--red {

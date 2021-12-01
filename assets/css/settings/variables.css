@@ -13,4 +13,7 @@
   --medium: 500;
   --bold: 700;
   --black: 900;
+
+  /* Clamps */
+  --clamp-10-16: clamp(10px, 2.5vw, 16px);
 }
