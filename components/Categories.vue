@@ -42,10 +42,10 @@ export default {
   list-style: none;
   display: flex;
   gap: 10px;
-  margin-bottom: 0;
+  margin-bottom: var(--clamp-10-16);
   padding-left: 0;
 
-  @media (--large-desktop) {
+  @media (--desktop) {
     gap: 18px;
   }
 }

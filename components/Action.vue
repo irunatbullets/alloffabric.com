@@ -48,10 +48,10 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: inline-block;
   min-width: min-content;
-  font-size: clamp(13px, 3.466666666666667vw, 16px);
+  font-size: clamp(13px, 3.5vw, 16px);
   font-weight: 900;
   line-height: 1;
-  padding: clamp(13px, 3.466666666666667vw, 20px) clamp(30px, 8vw, 40px);
+  padding: clamp(13px, 3.5vw, 20px) clamp(30px, 8vw, 40px);
   text-align: center;
   text-transform: uppercase;
   transition: box-shadow 75ms ease-in-out;

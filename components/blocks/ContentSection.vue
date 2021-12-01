@@ -1,12 +1,12 @@
 <template>
   <panel :color="block.color">
-    <h1>{{block.title}}</h1>
-    <p class="intro">{{block.intro}}</p>
-    <div>
-      {{ block.text }}
-    </div>
-    <div v-for="(section, index) in block.sections" :key="index">
-      <component :is="section.template" :props="section" />
+    <div class="content-section">
+      <h1>{{block.title}}</h1>
+      <p class="intro">{{block.intro}}</p>
+      <div v-html="$md.render(block.text)"></div>
+      <div v-for="(section, index) in block.sections" :key="index">
+        <component :is="section.template" :props="section" />
+      </div>
     </div>
   </panel>
 </template>
@@ -26,3 +26,9 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss">
+.content-section {
+  padding: 20px;
+}
+</style>

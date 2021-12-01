@@ -1,7 +1,9 @@
 <template>
   <panel :color="color">
     <div class="modpack">
-      <img :src="image" :alt="title + ' title screen'" class="modpack__image" />
+      <div class="modpack__image">
+        <img :src="image" :alt="title + ' title screen'" class="modpack__image" />
+      </div>
       <div class="modpack__details">
         <h2 class="modpack__name">{{ title }}</h2>
         <p class="modpack__description">{{ description }}</p>
@@ -53,34 +55,62 @@ export default {
 </script>
 
 <style lang="postcss">
-
-
-
 .modpack {
-  display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
+  @media (--phone) {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    padding: 142px 0 7vw;
+  }
+
+  @media (--desktop) {
+    gap: 20px;
+    padding-top: 130px;
+    align-items: center;
+  }
 }
 
 .modpack__image {
-  grid-column: span 9 / span 9;
-  width: 100%;
+  @media (--phone) {
+    grid-column: span 9 / span 9;
+    order: 9999;
+    width: 100%;
+  }
+
+  @media (--desktop) {
+    grid-row: 1;
+    grid-column: 3 / span 7;
+    order: 0;
+    padding-left: 4.652777777777778%;
+    padding-right: 4.652777777777778%;
+  }
 }
 
 .modpack__details {
-  display: grid;
-  grid-column: 3 / span 6;
-  grid-template-columns: subgrid;
-  grid-auto-rows: minmax(min-content, max-content);
+  padding: 10px 20px 20px;
 
-  @media (--large-desktop) {
+  @media (--phone) {
+    display: grid;
+    grid-column: 3 / span 6;
+    grid-template-columns: subgrid;
+    grid-auto-rows: minmax(min-content, max-content);
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (--desktop) {
     display: block;
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    margin-bottom: 0;
   }
 }
 
 .modpack__title,
 .modpack__description,
 .modpack__summary {
-  grid-column: 2 / span 5;
+  @media (--phone) {
+    grid-column: 2 / span 5;
+  }
 }
 
 .modpack__title {
@@ -96,63 +126,38 @@ export default {
 }
 
 .modpack__action {
-  grid-column: 2 / span 3;
+  grid-column: 2 / span 1;
   grid-row: 4;
 }
 
-.modpack__categories {
-  align-self: center;
-  order: -9999;
-  grid-row: 1 / span 4;
-  justify-self: flex-end;
-  /* margin-right: max(17px, 22.05882352941176%); */
-  margin-right: 17px;
-  flex-flow: column;
+.modpack__description,
+.modpack__summary {
+  max-width: 40ch;
+}
 
-  @media (--large-desktop) {
-    margin-bottom: 16px;
+.modpack__categories {
+  @media (--phone) {
+    align-self: center;
+    order: -9999;
+    grid-row: 1 / span 4;
+    justify-self: flex-end;
+    margin-right: 17px;
+    margin-bottom: 0;
+    flex-flow: column;
+  }
+
+  @media (--desktop) {
+    margin-bottom: revert;
     flex-flow: row;
   }
 }
 
-/* .modpack {
-  @media (--laptop) {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: 1;
-  }
-}
-
-.modpack__image {
-  @media (--laptop) {
-    grid-column: 3 / span 10;
-    grid-row: 1;
-  }
-
-  @media (--large-desktop) {
-    margin-left: 30px;
-  }
-}
-
-.modpack__details {
-  @media (--laptop) {
-    padding-top: 20px;
-    grid-column: 1 / span 3;
-    grid-row: 1;
-    z-index: 3;
-  }
-
-  @media (--large-desktop) {
-    padding-top: 32px;
-  }
-}
- */
 .modpack__summary {
   font-size: 18px;
   font-weight: 900;
   margin-bottom: 16px;
 
-  @media (--large-desktop) {
+  @media (--desktop) {
     font-size: 24px;
     margin-bottom: 34px;
   }

@@ -1,14 +1,14 @@
 <template>
   <panel :color="block.color">
-    <h1>{{block.title}}</h1>
-    <p class="intro">{{block.intro}}</p>
-    <div>
-      {{ block.text }}
-    </div>
-    <div v-for="(faq, index) in faqs" :key="index">
-      <h2>{{faq.title}}</h2>
-      <div v-html="$md.render(faq.content)"></div>
-      <a v-if="faq.file" :href="faq.file">{{ $fileName(faq.file) }}</a>
+    <div class="faqs">
+      <h1>{{block.title}}</h1>
+      <p class="intro">{{block.intro}}</p>
+      <div v-html="$md.render(block.text)"></div>
+      <div v-for="(faq, index) in faqs" :key="index" class="faq">
+        <h3>{{faq.title}}</h3>
+        <div v-html="$md.render(faq.content)"></div>
+        <a v-if="faq.file" :href="faq.file">{{ $fileName(faq.file) }}</a>
+      </div>
     </div>
   </panel>
 </template>
@@ -32,3 +32,13 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.faqs {
+  padding: 20px;
+}
+
+.faq {
+  margin-bottom: 27px;
+}
+</style>
