@@ -1,16 +1,6 @@
 <template>
   <div>
-    <h1>{{block.title}}</h1>
-<!--
-    <panel v-for="(modpack, index) in modpacks" :key="index" :color="modpack.color">
-      <div class="modpack">
-        <h2>{{modpack.title}}</h2>
-        <div v-html="$md.render(modpack.description)"></div>
-        <categories :categories="modpack.categories" />
-      </div>
-    </panel>
--->
-
+    <h1 class="modpacks__title">{{block.title}}</h1>
     <modpack
       v-for="(modpack, index) in modpacks"
       :key="index"
@@ -23,8 +13,6 @@
       :button="modpack.button"
       :color="modpack.color"
     />
-
-
   </div>
 </template>
 
@@ -39,7 +27,7 @@ export default {
   data() {
     return {
       block: this.props,
-      modpacks: []
+      modpacks: [],
     }
   },
   async fetch () {
@@ -47,3 +35,9 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.modpacks__title {
+  margin-top: 15px;
+}
+</style>

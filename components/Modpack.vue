@@ -1,11 +1,11 @@
 <template>
-  <panel :color="color">
+  <panel :color="modpackColor">
     <div class="modpack">
       <div class="modpack__image">
         <img :src="image" :alt="title + ' title screen'" class="modpack__image" />
       </div>
       <div class="modpack__details">
-        <h2 class="modpack__name">{{ title }}</h2>
+        <h2 class="modpack__title">{{ title }}</h2>
         <p class="modpack__description">{{ description }}</p>
         <categories :categories="categories" extra-classes="modpack__categories" />
         <p class="modpack__summary">Minecraft MODPACK<br/>{{ modCount }}+ Mods</p>
@@ -41,7 +41,7 @@ export default {
     button: {
       type: Object,
       default:() => ({
-        'color': 'orange',
+        'color': 'red',
         'text': 'Click',
         'url': '#'
       })
@@ -51,6 +51,11 @@ export default {
       default: 'white'
     }
   },
+  computed: {
+    modpackColor() {
+      return this.color === 'red' ? 'alt-red' : this.color
+    }
+  }
 }
 </script>
 
@@ -59,12 +64,10 @@ export default {
   @media (--phone) {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
-    padding: 142px 0 7vw;
   }
 
   @media (--desktop) {
     gap: 20px;
-    padding-top: 130px;
     align-items: center;
   }
 }
@@ -73,7 +76,6 @@ export default {
   @media (--phone) {
     grid-column: span 9 / span 9;
     order: 9999;
-    width: 100%;
   }
 
   @media (--desktop) {
@@ -86,13 +88,12 @@ export default {
 }
 
 .modpack__details {
-  padding: 10px 20px 20px;
+  padding: 15px 20px 20px;
 
   @media (--phone) {
     display: grid;
     grid-column: 3 / span 6;
     grid-template-columns: subgrid;
-    grid-auto-rows: minmax(min-content, max-content);
     padding: 0;
     margin-bottom: 30px;
   }
@@ -113,21 +114,8 @@ export default {
   }
 }
 
-.modpack__title {
-  grid-row: 1;
-}
-
-.modpack__description {
-  grid-row: 2;
-}
-
-.modpack__summary {
-  grid-row: 3;
-}
-
 .modpack__action {
   grid-column: 2 / span 1;
-  grid-row: 4;
 }
 
 .modpack__description,

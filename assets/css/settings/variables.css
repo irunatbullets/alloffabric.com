@@ -1,12 +1,12 @@
 :root {
   /* Colors */
-  --aof-red: #FF5252;
-  --aof-orange: #F64013;
-  --aof-yellow: #FFBE41;
-  --aof-green: #3FAB7E;
-  --aof-blue: #54BDBB;
+  --aof-red: #ff5252;
+  --aof-orange: #f64013;
+  --aof-yellow: #ffbe41;
+  --aof-green: #3fab7e;
+  --aof-blue: #54bdbb;
   --aof-purple: #522887;
-  --aof-pink: #FFA09A;
+  --aof-pink: #ffa09a;
 
   /* Font weights */
   --regular: 400;

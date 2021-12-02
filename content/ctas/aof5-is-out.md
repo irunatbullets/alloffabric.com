@@ -8,7 +8,7 @@ categories:
 type: modpack
 mod_count: 180
 button:
-  color: orange
+  color: red
   text: Play now
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-5
 image: uploads/cta-aof5.png

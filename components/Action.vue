@@ -3,7 +3,7 @@
     :is="element"
     :href="href"
     :class="[{
-      'button--orange': color === 'orange',
+      'button--red': color === 'red',
       'button--white': color === 'white',
     }, extraClasses]"
     class="button">
@@ -24,7 +24,7 @@
       },
       color: {
         type: String,
-        default: 'orange'
+        default: 'red'
       },
       extraClasses: {
         type: String,
@@ -63,9 +63,9 @@
   }
 }
 
-.button--orange {
+.button--red {
   color: white;
-  background: var(--aof-orange);
+  background: #F0414E;
 }
 
 .button--white {

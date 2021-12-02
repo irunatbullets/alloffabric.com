@@ -44,7 +44,7 @@ export default {
   components: {
     dirs: [
       '~/components',
-      '~/components/blocks'
+      '~/components/homepage'
     ]
   },
 

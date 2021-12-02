@@ -38,12 +38,13 @@ export default {
 <style lang="postcss">
 .welcome {
   padding: 20px;
+  width: 100%;
 
   @media (--phone) {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
     grid-auto-rows: minmax(min-content, max-content);
-    padding: 112px 0 7vw;
+    padding: 0;
   }
 
   @media (--desktop) {
@@ -97,10 +98,6 @@ export default {
     order: 9999;
     margin-left: 10px;
     margin-right: 20px;
-    max-width: 30ch;
-  }
-
-  @media (--laptop) {
     max-width: 40ch;
   }
 
@@ -150,13 +147,10 @@ export default {
     margin-right: 2.666666666666667%;
   }
 
-  @media (--tablet) {
-    margin-right: 0;
-  }
-
   @media (--desktop) {
     grid-column: -3 / span 2;
     grid-row: 1 / span 2;
+    margin-right: 0;
   }
 }
 </style>

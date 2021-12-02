@@ -34,10 +34,6 @@ export default {
   &:last-child {
     margin-bottom: 0;
   }
-
-  /* @media (--large-desktop) {
-    margin-bottom: 30px;
-  } */
 }
 
 .stats__title {
@@ -45,20 +41,11 @@ export default {
   font-weight: 900;
   line-height: 1;
   margin-bottom: clamp(3px, 0.09375em, 12px);
-
-  /* @media (--large-desktop) {
-    font-size: 60px;
-    margin-bottom: 12px;
-  } */
 }
 
 .stats__text {
   font-size: clamp(13px, 3.5vw, 18px);
   margin-left: 0;
   max-width: 18ch;
-
-  /* @media (--large-desktop) {
-    font-size: 18px;
-  } */
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div :class="panelClasses">
-    <div class="panel__inner">
+
       <slot />
-    </div>
+
   </div>
 </template>
 
@@ -26,23 +26,19 @@ export default {
 .panel {
   color: white;
   display: flex;
-  margin-bottom: 10px;
+  align-items: center;
+  width: 100%;
 
   @media (--phone) {
     min-height: 100vh;
-    margin-bottom: 0;
   }
-}
-
-.panel__inner {
-  width: 100%;
 }
 
 .panel--red {
   background: var(--aof-red);
 }
 .panel--orange {
-  background: var(--aof-orange);
+  background: var(--aof-red);
 }
 .panel--yellow {
   background: var(--aof-yellow);
@@ -58,6 +54,9 @@ export default {
 }
 .panel--pink {
   background: var(--aof-pink);
+}
+.panel--alt-red {
+  background: #FC6E5E;
 }
 
 </style>

@@ -28,9 +28,9 @@ blocks:
   image: uploads/placeholder-large.png
 - template: modpacks
   title: Our modpacks
-- template: content-section
+- template: highlight
   color: yellow
-  title: "Our \Lcommunity"
+  title: Our community
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
@@ -39,10 +39,15 @@ blocks:
     adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
     voluptatem.
   image: uploads/placeholder-large.png
+  button:
+    color: red
+    text: ''
+    url: ''
+
   sections:
   - template: text-block
     button:
-      color: orange
+      color: red
       text: Check the FAQ
       url: "#"
     title: Need help?
@@ -55,7 +60,7 @@ blocks:
     image: ''
   - template: text-block
     button:
-      color: orange
+      color: red
       text: Join us
       url: "#"
     title: 24/7 on Discord
@@ -66,7 +71,7 @@ blocks:
     include_button: true
     include_image: false
     image: ''
-- template: content-section
+- template: highlight
   color: pink
   title: Support our team
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -77,10 +82,14 @@ blocks:
     adipisci sunt sed quia facilis ut repudiandae sint a voluptas dolor est consectetur
     voluptatem.
   image: uploads/placeholder-large.png
+  button:
+    color: red
+    text: 'Patreon'
+    url: '#'
   sections:
   - template: text-block
     button:
-      color: orange
+      color: red
       text: ''
       url: ''
     title: Custom items, skins and more

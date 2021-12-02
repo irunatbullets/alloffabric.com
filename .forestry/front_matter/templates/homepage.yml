@@ -8,7 +8,7 @@ fields:
   - news
   - welcome
   - modpacks
-  - content-section
+  - highlight
   - faqs
   config:
     min:

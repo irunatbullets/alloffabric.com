@@ -30,13 +30,18 @@ fields:
   config:
     maxSize: 64
   label: Image
+- name: button
+  type: include
+  config: {}
+  template: button
+  label: Button
 - name: sections
   type: blocks
   label: Sections
   template_types:
   - text-block
   config:
-    min: 
+    min:
     max: 2
 - name: color
   type: include

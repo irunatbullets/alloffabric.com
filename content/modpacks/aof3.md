@@ -7,7 +7,7 @@ categories:
   quests: true
 mod_count: 180
 button:
-  color: orange
+  color: red
   text: Play now
   url: https://www.curseforge.com/minecraft/modpacks/all-of-fabric-3
 color: red
