@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="modpacks__title">{{block.title}}</h1>
+    <!-- <h1 class="modpacks__title">{{block.title}}</h1> -->
     <modpack
       v-for="(modpack, index) in modpacks"
       :key="index"

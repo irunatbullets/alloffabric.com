@@ -2,7 +2,7 @@
   <panel :color="modpackColor">
     <div class="modpack">
       <div class="modpack__image">
-        <img :src="image" :alt="title + ' title screen'" class="modpack__image" />
+        <img :src="image" :alt="title + ' title screen'" class="modpack__image" data-aos="fade-up" data-aos-mirror="true" />
       </div>
       <div class="modpack__details">
         <h2 class="modpack__title">{{ title }}</h2>
@@ -89,6 +89,7 @@ export default {
 
 .modpack__details {
   padding: 15px 20px 20px;
+  z-index: 1;
 
   @media (--phone) {
     display: grid;

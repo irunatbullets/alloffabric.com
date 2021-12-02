@@ -33,11 +33,16 @@ export default {
     '@/assets/css/generic/typography.css',
     // Utilities
     '@/assets/css/utilities/sr-only.css',
+    'aos/dist/aos.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/helpers.js'
+    {
+      src: '@/plugins/aos.js',
+      mode: 'client'
+    },
+    '~/plugins/helpers.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

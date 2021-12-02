@@ -1,10 +1,10 @@
 <template>
   <div>
-<!--
-    {{block.template}}
 
-    {{ctas}}
- -->
+    <!-- {{block.template}}
+
+    {{ctas}} -->
+
   </div>
 </template>
 

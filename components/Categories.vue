@@ -8,6 +8,9 @@
       v-for="(category, index) in categoryArray"
       :key="index"
       class="categories__item"
+      data-aos="zoom-in"
+      data-aos-delay="75"
+      data-aos-duration="600"
     >
       <icon :name="category" />
     </li>

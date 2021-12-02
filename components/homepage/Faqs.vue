@@ -39,6 +39,10 @@ export default {
 .faqs {
   padding: 20px;
 
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
   @media (--phone) {
     padding: 0;
     display: grid;
@@ -69,7 +73,6 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 3px;
   padding: 10px 15px;
-
 
   &:hover {
     border-color: rgba(255, 255, 255, 1);
