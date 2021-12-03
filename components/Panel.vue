@@ -26,16 +26,12 @@ export default {
   display: flex;
   align-items: center;
   width: 100%;
+  scroll-snap-align: start;
 
   @media (--phone) {
     min-height: 100vh;
     padding-top: clamp(60px, 16vw, 130px);
     padding-bottom: clamp(60px, 16vw, 80px);
-  }
-
-  @media (--desktop) {
-    /* padding-top: 130px; */
-    padding-bottom: 80px;
   }
 }
 

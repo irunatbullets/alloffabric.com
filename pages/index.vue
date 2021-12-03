@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="test">
     <component
       :is="block.template"
       v-for="(block, index) in page.blocks"
@@ -20,3 +20,7 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss">
+
+</style>
