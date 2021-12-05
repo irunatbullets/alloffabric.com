@@ -39,6 +39,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
     padding: 0;
+    grid-gap: 0 20px;
   }
 }
 
@@ -48,6 +49,14 @@ export default {
   @media (--phone) {
     margin-top: 30px;
     grid-column: 1 / span 9;
+  }
+
+  @media (--desktop) {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 6 / span 4;
+    grid-row: 1;
+    margin-top: calc((60 / 1440) * 100vw);
   }
 }
 

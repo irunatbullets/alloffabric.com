@@ -33,17 +33,24 @@ export default {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
+
+  @media (--desktop) {
+    display: block;
+    grid-column: 2 / span 3;
+  }
 }
 
 .text-block__title {
   @media (--phone) {
     grid-column: 2 / span 7;
+    max-width: 15ch;
   }
 }
 
 .text-block__content {
   @media (--phone) {
     grid-column: 2 / span 7;
+    max-width: 38ch;
   }
 }
 
@@ -65,13 +72,26 @@ export default {
     order: -9999;
     grid-column: 4 / span 6;
     margin-top: 0;
+    margin-top: 5.5vw;
+    max-width: 21vw;
   }
 }
 
 .text-block + .text-block {
+
+  @media (--desktop) {
+    grid-column: 1 / span 3;
+  }
+
   & .text-block__title,
   & .text-block__content {
     grid-column: 3 / span 6;
+  }
+
+  & .text-block__content {
+    @media (--desktop) {
+      max-width: 100%;
+    }
   }
 
   & .text-block__button {
