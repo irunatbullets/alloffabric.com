@@ -1,5 +1,5 @@
 <template>
-  <div :class="panelClasses">
+  <div :class="[panelClasses, 'parallax__container']">
     <slot />
   </div>
 </template>
@@ -30,8 +30,8 @@ export default {
 
   @media (--phone) {
     min-height: 100vh;
-    padding-top: clamp(60px, calc(60 / 375 * 100vw), 130px);
-    padding-bottom: clamp(60px, calc(60 / 375 * 100vw), 80px);
+    padding-top: 152px;
+    padding-bottom: 80px;
   }
 }
 

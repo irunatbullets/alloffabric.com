@@ -10,7 +10,7 @@
         <div v-for="(faq, index) in faqs" :key="index" class="faqs__item">
           <h3>{{faq.title}}</h3>
           <div v-if="faq.content" v-html="$md.render(faq.content)"></div>
-          <p v-if="faq.file"><a :href="faq.file" class="faq__download">{{ $fileName(faq.file) }}</a></p>
+          <p v-if="faq.file"><a :href="faq.file" class="faqs__download">{{ $fileName(faq.file) }}</a></p>
         </div>
       </div>
     </div>

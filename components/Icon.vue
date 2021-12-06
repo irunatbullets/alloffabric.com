@@ -1,5 +1,5 @@
 <template>
-  <component :is="icon" class="icon" />
+  <component :is="icon" class="icon" :class="extraClasses" />
 </template>
 
 <script>
@@ -8,6 +8,10 @@ export default {
     name: {
       type: String,
       required: true
+    },
+    extraClasses: {
+      type: String,
+      default: ''
     }
   },
   computed: {

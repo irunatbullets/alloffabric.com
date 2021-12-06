@@ -1,6 +1,6 @@
 <template>
   <panel :color="block.color">
-    <div class="welcome">
+    <div class="welcome parallax">
       <div class="welcome__image">
         <img :src="block.image" alt="" />
       </div>

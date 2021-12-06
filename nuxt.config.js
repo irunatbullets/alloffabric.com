@@ -17,7 +17,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
-    ]
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -33,7 +33,7 @@ export default {
     '@/assets/css/generic/typography.css',
     // Utilities
     '@/assets/css/utilities/sr-only.css',
-    'aos/dist/aos.css',
+    '@/assets/css/utilities/aos.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
