@@ -29,7 +29,7 @@ export default {
 
 <style lang="postcss">
 .stats__item {
-  margin-bottom: clamp(12px, 3vw, 30px);
+  margin-bottom: clamp(12px, calc(12 / 375 * 100vw), 30px);
 
   &:last-child {
     margin-bottom: 0;
@@ -37,14 +37,14 @@ export default {
 }
 
 .stats__title {
-  font-size: clamp(32px, 8.5vw, 60px);
+  font-size: clamp(32px, calc(32 / 375 * 100vw), 60px);
   font-weight: 900;
   line-height: 1;
   margin-bottom: clamp(3px, 0.09375em, 12px);
 }
 
 .stats__text {
-  font-size: clamp(13px, 3.5vw, 18px);
+  font-size: clamp(13px, calc(13 / 375 * 100vw), 18px);
   margin-left: 0;
   max-width: 18ch;
 }

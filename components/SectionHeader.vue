@@ -1,5 +1,5 @@
 <template>
-  <header class="section-header">
+  <header class="section-header" :class="extraClasses">
       <h1 class="section-header__title">{{title}}</h1>
       <p v-if="intro" class="section-header__intro intro">{{intro}}</p>
       <div v-if="image" class="section-header__image">
@@ -41,6 +41,10 @@ export default {
         text: '',
         color: 'red'
       })
+    },
+    extraClasses: {
+      type: String,
+      default: '',
     }
   }
 }
@@ -48,86 +52,101 @@ export default {
 
 <style lang="postcss">
 .section-header {
-  @media (--phone) {
-    display: grid;
-    grid-template-columns: repeat(9, minmax(0, 1fr));
-    grid-column: 1 / span 9;
-    margin-bottom: 30px;
-  }
-
-  @media (--desktop) {
-    grid-template-columns: subgrid;
-    grid-gap: 0 20px;
-    grid-column: 1 / span 7;
-    align-content: start;
-    grid-row: 1;
-  }
+  & > :last-child {margin-bottom: 0;}
 }
 
-.section-header__title {
-  @media (--phone) {
-    grid-column: 2 / span 7;
-    line-height: 0.95;
-  }
-
-  @media (--desktop) {
-    grid-column: 2 / span 3;
-    grid-row: 1;
-    margin-top: calc((75 / 1440) * 100vw);
-  }
-}
-
-.section-header__intro {
-  @media (--phone) {
-    grid-column: 3 / span 6;
-  }
-
-  @media (--desktop) {
-    grid-column: 2 / span 3;
-    grid-row: 2;
-    max-width: 30ch;
-  }
+.section-header__intro,
+.section-header__image,
+.section-header__content {
+  max-width: clamp(334px, calc(334 / 375 * 100vw), 630px);
 }
 
 .section-header__image {
-  margin-bottom: 20px;
-  @media (--phone) {
+  margin-bottom: clamp(20px, calc(20 / 375 * 100vw), 26px);
+}
+
+.section-header__content {
+  margin-bottom: clamp(20px, calc(20 / 375 * 100vw), 26px);
+
+  & > :last-child {margin-bottom: 0;}
+}
+
+@media (--phone) {
+  .section-header {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .section-header__title {
+    grid-column: 2 / span 7;
+  }
+
+  .section-header__intro {
+    grid-column: 3 / span 6;
+  }
+
+  .section-header__image {
     grid-column: 1 / span 8;
   }
 
-  @media (--desktop) {
+  .section-header__content {
+    grid-column: 3 / span 6;
+  }
+
+  .section-header__button {
+    grid-column: 3;
+  }
+}
+
+@media (--tablet) {
+  .section-header__image {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media (--desktop) {
+  .section-header {
+    display: contents;
+  }
+
+  .section-header__title,
+  .section-header__intro,
+  .section-header__content,
+  .section-header__button {
+    grid-column-start: 2;
+  }
+
+  .section-header__title,
+  .section-header__intro,
+  .section-header__content {
+    grid-column-end: span 3;
+  }
+
+  .section-header__title {
+    grid-row: 1;
+    margin-top: 60px;
+  }
+
+  .section-header__intro {
+    grid-row: 2;
+    max-width: 20ch;
+  }
+
+  .section-header__content {
+    grid-row: 3;
+    max-width: 30ch;
+  }
+
+  .section-header__button {
+    grid-row: 4;
+  }
+
+  .section-header__image {
     order: -9999;
     grid-column: 4 / span 4;
     grid-row: 1 / span 5;
     margin-bottom: 0;
-  }
-}
-
-.section-header__content {
-
-  & > :last-child {
-    margin-bottom: 0;
-  }
-
-  @media (--phone) {
-    grid-column: 3 / span 6;
-  }
-
-  @media (--desktop) {
-    grid-column: 2 / span 2;
-    grid-row: 3;
-  }
-}
-
-.section-header__button {
-  @media (--phone) {
-    grid-column: 3 / span 1;
-  }
-
-  @media (--desktop) {
-    grid-column: 2;
-    grid-row: 4;
-    margin-top: 26px;
   }
 }
 </style>
