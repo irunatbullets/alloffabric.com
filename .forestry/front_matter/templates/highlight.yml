@@ -41,7 +41,7 @@ fields:
   template_types:
   - text-block
   config:
-    min:
+    min: 
     max: 2
 - name: color
   type: include
