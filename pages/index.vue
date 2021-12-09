@@ -1,14 +1,18 @@
 <template>
   <div class="test">
-    <header class="site-header">
+    <!-- <header class="site-header">
       <a href="/" class="site-header__link"><icon name="aof-logo" extra-classes="site-header__logo" /></a>
-    </header>
+    </header> -->
+
     <component
       :is="block.template"
       v-for="(block, index) in page.blocks"
+      :id="blockID(block, index)"
       :key="index"
       :props="block"
+
     />
+
   </div>
 </template>
 
@@ -19,16 +23,22 @@ export default {
     return {
       page
     }
+  },
+  methods: {
+    blockID(block, index) {
+      return `${block.title.toLowerCase().replace(/\s/g, '-')}`
+    }
   }
 }
 </script>
 
 <style lang="postcss">
-.site-header {
+/* .site-header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
+  mix-blend-mode: overlay;
 }
 
 .site-header__link::before {
@@ -66,5 +76,5 @@ export default {
     height: 420px;
     margin-left: calc(40 / 1440 * 100vw);
   }
-}
+} */
 </style>

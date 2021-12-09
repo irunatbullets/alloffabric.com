@@ -1,5 +1,5 @@
 <template>
-  <div :class="[panelClasses, 'parallax__container']">
+  <div :class="panelClasses">
     <slot />
   </div>
 </template>

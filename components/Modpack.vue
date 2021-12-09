@@ -1,6 +1,6 @@
 <template>
   <panel :color="modpackColor">
-    <div class="modpack parallax">
+    <div class="modpack">
       <div class="modpack__image">
         <img :src="image" :alt="title + ' title screen'" class="modpack__image" data-aos="fade-up" data-aos-mirror="true" />
       </div>

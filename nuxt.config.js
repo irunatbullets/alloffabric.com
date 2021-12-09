@@ -38,10 +38,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {
-      src: '@/plugins/aos.js',
-      mode: 'client'
-    },
+    '@/plugins/aos.client.js',
     '~/plugins/helpers.js',
   ],
 
