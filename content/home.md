@@ -33,6 +33,11 @@ blocks:
   - content/modpacks/aof5.md
   - content/modpacks/aof4.md
   - content/modpacks/aof3.md
+  modpacks:
+  - content/modpacks/skylore.md
+  - content/modpacks/aof5.md
+  - content/modpacks/aof4.md
+  - content/modpacks/aof3.md
 - template: highlight
   color: yellow
   title: Our community
