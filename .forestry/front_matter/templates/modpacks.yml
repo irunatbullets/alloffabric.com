@@ -14,7 +14,7 @@ fields:
     min: 
     max: 
     source:
-      type: documents
+      type: pages
       section: modpacks
       file: 
   label: Modpacks
