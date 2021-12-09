@@ -28,6 +28,11 @@ blocks:
   image: uploads/placeholder-large.png
 - template: modpacks
   title: Our modpacks
+  testing:
+  - content/modpacks/skylore.md
+  - content/modpacks/aof5.md
+  - content/modpacks/aof4.md
+  - content/modpacks/aof3.md
 - template: highlight
   color: yellow
   title: Our community
@@ -43,7 +48,6 @@ blocks:
     color: red
     text: ''
     url: ''
-
   sections:
   - template: text-block
     button:
@@ -84,8 +88,8 @@ blocks:
   image: uploads/placeholder-large.png
   button:
     color: red
-    text: 'Patreon'
-    url: '#'
+    text: Patreon
+    url: "#"
   sections:
   - template: text-block
     button:
