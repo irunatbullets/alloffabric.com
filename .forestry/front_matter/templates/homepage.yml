@@ -11,8 +11,8 @@ fields:
   - highlight
   - faqs
   config:
-    min:
-    max:
+    min: 
+    max: 
   label: Blocks
 pages:
 - content/home.md
