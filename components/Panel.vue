@@ -1,5 +1,5 @@
 <template>
-  <div class="panel" :data-panel="color">
+  <div class="panel" :data-panel="color" :data-id="dataID">
     <slot />
   </div>
 </template>
@@ -11,6 +11,10 @@ export default {
       type: String,
       default: '',
     },
+    dataID: {
+      type: String,
+      default: ''
+    }
   },
   mounted() {
     const panels = [...document.querySelectorAll('[data-panel]')]
