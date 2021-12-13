@@ -16,7 +16,7 @@
       <nuxt-link to="/" class="navigation__home"><div class="navigation__spot"><icon name="aof-logo" /></div></nuxt-link>
       <ul class="navigation__list">
         <li v-for="(block, index) in page.blocks" :key="index" class="navigation__item">
-          <nuxt-link :to="`#${blockID(block)}`" class="navigation__link">{{block.short_name}}</nuxt-link>
+          <nuxt-link :to="`#${blockID(block)}`" class="navigation__link" data-link>{{block.short_name}}</nuxt-link>
         </li>
       </ul>
     </header>
@@ -67,14 +67,28 @@ export default {
   display: grid;
   grid-template-columns: repeat(9, minmax(0, 1fr));
   align-items: center;
-  margin-top: 22px;
+  padding: 22px 0 11px;
 
   width: 100%;
 
   @media (--desktop) {
     gap: 0 20px;
-    margin-top: 30px;
+    padding: 30px 0 15px;
   }
+}
+
+.navigation::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  background-color: red;
+  z-index: -1;
+  transition: background-color 600ms cubic-bezier(.25,.46,.45,.94);
+  opacity: 0.75;
 }
 
 .navigation__home {
@@ -99,9 +113,10 @@ export default {
 }
 
 .navigation__spot {
-  background-color: #F2414E;
+  /* background-color: #F2414E; */
   border-radius: 9999px;
-  padding: 2px;
+  padding: 0;
+  transition: background-color 600ms cubic-bezier(.25,.46,.45,.94);
 }
 
 .navigation__link {
@@ -124,19 +139,19 @@ export default {
   } */
 }
 
-[data-theme='purple'] .navigation__spot {background-color: #64369F;}
+/* [data-theme='purple'] .navigation__spot {background-color: #64369F;}
 [data-theme='green'] .navigation__spot {background-color: #59C78B;}
 [data-theme='blue'] .navigation__spot {background-color: #71CCC9;}
 [data-theme='alt-red'] .navigation__spot {background-color: #FFA197;}
 [data-theme='yellow'] .navigation__spot {background-color: #FFD78A;}
-[data-theme='pink'] .navigation__spot {background-color: #FFB4AF;}
+[data-theme='pink'] .navigation__spot {background-color: #FFB4AF;} */
 
-/* [data-theme='red'] .navigation__link {background-color: var(--aof-red)}
-[data-theme='purple'] .navigation__link {background-color: var(--aof-purple);}
-[data-theme='green'] .navigation__link {background-color: var(--aof-green);}
-[data-theme='blue'] .navigation__link {background-color: var(--aof-blue);}
-[data-theme='alt-red'] .navigation__link {background-color: #FC6E5E;}
-[data-theme='yellow'] .navigation__link {background-color: var(--aof-yellow);}
-[data-theme='pink'] .navigation__link {background-color: var(--aof-pink);} */
+[data-theme='red'].navigation::before {background-color: var(--aof-red)}
+[data-theme='purple'].navigation::before {background-color: var(--aof-purple);}
+[data-theme='green'].navigation::before {background-color: var(--aof-green);}
+[data-theme='blue'].navigation::before {background-color: var(--aof-blue);}
+[data-theme='alt-red'].navigation::before {background-color: #FC6E5E;}
+[data-theme='yellow'].navigation::before {background-color: var(--aof-yellow);}
+[data-theme='pink'].navigation::before {background-color: var(--aof-pink);}
 
 </style>

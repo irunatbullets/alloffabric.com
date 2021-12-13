@@ -19,12 +19,13 @@ export default {
   mounted() {
     const panels = [...document.querySelectorAll('[data-panel]')]
     const header = document.querySelector('[data-header]')
+    // const headerLinks = [...document.querySelectorAll('[data-link]')]
 
     let prevYPosition = 0
     let direction = 'up'
 
     const options = {
-      rootMargin: `${header.offsetHeight / 2 * -1}px`,
+      rootMargin: `${header.offsetHeight * -1}px`,
       threshold: 0,
     }
 
@@ -41,6 +42,20 @@ export default {
     const updateColors = (target) => {
       const theme = target.dataset.panel
       header.setAttribute('data-theme', theme)
+    }
+
+    const updateMarker = (target) => {
+      const id = target.id
+
+      if (!id) return
+
+      // let link = headerLinks.find((el) => {
+      //   return el.getAttribute('href') === `#${id}`
+      // })
+
+      // link = link || headerLinks[0]
+
+      header.setAttribute('data-hello', target.id)
     }
 
     const shouldUpdate = (entry) => {
@@ -69,15 +84,15 @@ export default {
 
         if (shouldUpdate(entry)) {
           updateColors(target)
-          // updateMarker(target)
+          updateMarker(target)
         }
       })
     }
 
     document.addEventListener('readystatechange', e => {
-      // if (e.target.readyState === 'complete') {
-      //   updateMarker(sections[0])
-      // }
+      if (e.target.readyState === 'complete') {
+        updateMarker(panels[0])
+      }
     })
 
     const observer = new IntersectionObserver(onIntersect, options)

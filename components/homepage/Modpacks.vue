@@ -2,6 +2,7 @@
   <div>
     <modpack
       v-for="(modpack, index) in modpacks"
+      :id="firstItemID(index)"
       :key="index"
       :type="modpack.type"
       :title="modpack.title"
@@ -22,6 +23,10 @@ export default {
       type: Object,
       default: () => ({})
     },
+    id: {
+      type: String,
+      default: ''
+    }
   },
   data() {
     return {
@@ -32,6 +37,11 @@ export default {
   async fetch () {
     this.modpacks = await this.$content('modpacks').sortBy('release_date', 'desc').fetch()
   },
+  methods: {
+    firstItemID(index) {
+      return index === 0 ? this.id : ''
+    }
+  }
 }
 </script>
 
