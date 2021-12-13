@@ -73,7 +73,7 @@ export default {
 
   @media (--desktop) {
     gap: 0 20px;
-    margin-top: 44px;
+    margin-top: 30px;
   }
 }
 
