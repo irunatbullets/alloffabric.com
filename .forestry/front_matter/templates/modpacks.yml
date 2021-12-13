@@ -7,6 +7,12 @@ fields:
   config:
     required: false
   label: Title
+- name: anchor
+  type: text
+  config:
+    required: true
+  label: Anchor
+  hidden: false
 - name: modpacks
   type: list
   config:
