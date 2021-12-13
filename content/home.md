@@ -3,6 +3,7 @@ blocks:
 - template: news
   ctas: []
   title: ''
+  short_name: News
 - template: welcome
   button:
     color: white
@@ -10,6 +11,7 @@ blocks:
     url: "#"
   color: red
   title: Welcome to All of Fabric
+  short_name: About us
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
     Ut neque dolorem aut dignissimos mollitia et repellat adipisci! Ex nisi possimus
@@ -28,6 +30,7 @@ blocks:
   image: uploads/placeholder-large.png
 - template: modpacks
   title: Our modpacks
+  short_name: Modpacks
   modpacks:
   - content/modpacks/aof5.md
   - content/modpacks/aof4.md
@@ -35,6 +38,7 @@ blocks:
 - template: highlight
   color: yellow
   title: Our community
+  short_name: Community
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
@@ -77,6 +81,7 @@ blocks:
 - template: highlight
   color: pink
   title: Support our team
+  short_name: Support us
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.
@@ -105,6 +110,7 @@ blocks:
     include_button: false
 - template: faqs
   title: FAQ
+  short_name: Faq
   intro: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   text: Lorem ipsum dolor sit amet. Et placeat odio aut exercitationem tempore ea
     similique dignissimos cum iure molestiae qui quia nostrum ut dolorum cupiditate.

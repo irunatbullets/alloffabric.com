@@ -7,6 +7,13 @@ fields:
   config:
     required: false
   label: Title
+- name: short_name
+  type: text
+  description: Used for navigation
+  config:
+    required: true
+  label: Short name
+  hidden: false
 - name: intro
   type: textarea
   default: ''
@@ -41,7 +48,7 @@ fields:
   template_types:
   - text-block
   config:
-    min: 
+    min:
     max: 2
 - name: color
   type: include

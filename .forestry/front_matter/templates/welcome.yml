@@ -7,6 +7,13 @@ fields:
   config:
     required: false
   label: Title
+- name: short_name
+  type: text
+  description: Used for navigation
+  config:
+    required: true
+  label: Short name
+  hidden: false
 - name: text
   type: textarea
   default: ''
@@ -24,7 +31,7 @@ fields:
 - name: stats
   type: field_group_list
   config:
-    min: 
+    min:
     max: 4
     labelField: title
   label: Stats
