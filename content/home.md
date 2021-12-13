@@ -28,11 +28,6 @@ blocks:
   image: uploads/placeholder-large.png
 - template: modpacks
   title: Our modpacks
-  testing:
-  - content/modpacks/skylore.md
-  - content/modpacks/aof5.md
-  - content/modpacks/aof4.md
-  - content/modpacks/aof3.md
   modpacks:
   - content/modpacks/aof5.md
   - content/modpacks/aof4.md
