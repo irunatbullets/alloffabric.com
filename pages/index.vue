@@ -55,8 +55,8 @@ export default {
   z-index: 3;
 }
 
-[data-theme] {color: white;}
-[data-theme='white'] {color: black;}
+/* [data-theme] {color: white;}
+[data-theme='white'] {color: black;} */
 /* [data-theme='red'] {color: yellow;}
 [data-theme='purple'] {color: green;}
 [data-theme='green'] {color: orange;}
@@ -68,6 +68,7 @@ export default {
   grid-template-columns: repeat(9, minmax(0, 1fr));
   align-items: center;
   padding: 22px 0 11px;
+  color: white;
 
   width: 100%;
 
@@ -85,7 +86,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0%;
-  background-color: red;
+  background-color: var(--aof-red);
   z-index: -1;
   transition: background-color 600ms cubic-bezier(.25,.46,.45,.94);
   opacity: 0.75;
