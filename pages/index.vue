@@ -1,22 +1,10 @@
 <template>
   <div class="test">
-
-    <!-- <div v-for="(block, index) in page.blocks" :key="index" style="margin-bottom: 20px;">
-
-        {{block.title}}
-        <div v-if="block.modpacks">
-          <div v-for="(modpack, index2) in block.modpacks" :key="index2">
-            {{modpack}}
-          </div>
-        </div>
-
-    </div> -->
-
     <header class="navigation" data-header>
       <nuxt-link to="/" class="navigation__home"><div class="navigation__spot"><icon name="aof-logo" /></div></nuxt-link>
       <ul class="navigation__list">
         <li v-for="(block, index) in page.blocks" :key="index" class="navigation__item">
-          <nuxt-link :to="`#${blockID(block)}`" class="navigation__link" data-link>{{block.short_name}}</nuxt-link>
+          <nuxt-link :to="`#${blockID(block)}`" class="navigation__link" :data-link="`${blockID(block)}`">{{block.short_name}}</nuxt-link>
         </li>
       </ul>
     </header>
@@ -54,14 +42,6 @@ export default {
   left: 0;
   z-index: 3;
 }
-
-/* [data-theme] {color: white;}
-[data-theme='white'] {color: black;} */
-/* [data-theme='red'] {color: yellow;}
-[data-theme='purple'] {color: green;}
-[data-theme='green'] {color: orange;}
-[data-theme='blue'] {color: white;}
-[data-theme='alt-red'] {color: black;} */
 
 .navigation {
   display: grid;
@@ -114,21 +94,17 @@ export default {
 }
 
 .navigation__spot {
-  /* background-color: #F2414E; */
   border-radius: 9999px;
   padding: 0;
   transition: background-color 600ms cubic-bezier(.25,.46,.45,.94);
 }
 
 .navigation__link {
-  /* background-color: transparent;
-  padding: 2px 6px;
-  border-radius: 4px; */
   padding: 20px;
   margin-left: -20px;
   position: relative;
 
-  /* &::before {
+  &::before {
     content: '';
     display: block;
     position: absolute;
@@ -136,16 +112,20 @@ export default {
     right: 0;
     bottom: 100%;
     top: -100px;
+    transform: translateY(-100%);
     background-color: #F2414E;
-  } */
+    transition: transform 200ms cubic-bezier(.25,.46,.45,.94);
+  }
 }
 
-/* [data-theme='purple'] .navigation__spot {background-color: #64369F;}
-[data-theme='green'] .navigation__spot {background-color: #59C78B;}
-[data-theme='blue'] .navigation__spot {background-color: #71CCC9;}
-[data-theme='alt-red'] .navigation__spot {background-color: #FFA197;}
-[data-theme='yellow'] .navigation__spot {background-color: #FFD78A;}
-[data-theme='pink'] .navigation__spot {background-color: #FFB4AF;} */
+[data-header='news'] [data-link='news']::before,
+[data-header='about-us'] [data-link='about-us']::before,
+[data-header='modpacks'] [data-link='modpacks']::before,
+[data-header='community'] [data-link='community']::before,
+[data-header='support-us'] [data-link='support-us']::before,
+[data-header='faq'] [data-link='faq']::before  {
+  transform: translateY(0);
+}
 
 [data-theme='red'].navigation::before {background-color: var(--aof-red)}
 [data-theme='purple'].navigation::before {background-color: var(--aof-purple);}

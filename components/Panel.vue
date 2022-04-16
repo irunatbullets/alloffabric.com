@@ -19,7 +19,6 @@ export default {
   mounted() {
     const panels = [...document.querySelectorAll('[data-panel]')]
     const header = document.querySelector('[data-header]')
-    // const headerLinks = [...document.querySelectorAll('[data-link]')]
 
     let prevYPosition = 0
     let direction = 'up'
@@ -49,13 +48,7 @@ export default {
 
       if (!id) return
 
-      // let link = headerLinks.find((el) => {
-      //   return el.getAttribute('href') === `#${id}`
-      // })
-
-      // link = link || headerLinks[0]
-
-      header.setAttribute('data-hello', target.id)
+      header.setAttribute('data-header', target.id)
     }
 
     const shouldUpdate = (entry) => {
